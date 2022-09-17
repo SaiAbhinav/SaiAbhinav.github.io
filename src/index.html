@@ -4,31 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 
     <title>Sai Abhinav</title>
 
-    <link href="./css/compiled.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/compiled.css">
     <script src="./js/scripts.js" defer></script>
 </head>
 
-<body class="bg-white dark:bg-zinc-600 text-black dark:text-white">
+<body class="bg-slate-100 dark:bg-neutral-600 text-neutral-800 dark:text-white">
     <!-- Navbar -->
-    <nav class="bg-white dark:bg-zinc-600 fixed top-0 left-0 right-0 transition-all duration-200 z-50">
+    <nav class="dark:bg-neutral-600 opacity-95 fixed top-0 left-0 right-0 transition-all duration-200 z-50">
         <div class="max-w-7xl mx-auto py-4 px-4 md:px-0 nav-container transition-all duration-200">
-            <div class="flex justify-between">
-                <!-- System Navigation -->
-                <div class="hidden md:flex items-center space-x-7">
-                    <a href="#home" class="py-4 px-2 hover:font-bold">Home</a>
-                    <a href="#about" class="py-4 px-2 hover:font-bold">About</a>
-                    <a href="#blog" class="py-4 px-2 hover:font-bold">Blog</a>
-                    <a href="#contact" class="py-4 px-2 hover:font-bold">Contact</a>
+            <div class="flex justify-between items-center">
+
+                <!-- Brand / Title -->
+                <div class="flex justify-start items-center gap-4">
+                    <a href="#home"
+                        class="w-7 h-7 flex justify-center items-center border-2 transition-all duration-200 hover:scale-110 text-neutral-600 dark:text-white border-neutral-600 hover:bg-neutral-600 hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-neutral-800 rounded rotate-45">
+                        <span class="text-sm font-bold -rotate-45">SA</span>
+                    </a>
+                    <span class="flex md:hidden mobile-menu-brand">Sai Abhinav</span>
                 </div>
+
+                <!-- System Navigation -->
+                <ul class="hidden md:flex items-center space-x-7">
+                    <li class="py-4 px-2 text-sm hover:font-bold">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="py-4 px-2 text-sm hover:font-bold">
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li class="py-4 px-2 text-sm hover:font-bold">
+                        <a href="#work">Work</a>
+                    </li>
+                    <li class="py-4 px-2 text-sm hover:font-bold">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="./assets/docs/Resume.pdf" download target="_blank"
+                            class="text-sm border-2 text-neutral-600 dark:text-white border-neutral-600 hover:bg-neutral-600/20 dark:border-white dark:hover:bg-white/20 rounded px-3 py-1">Resume</a>
+                    </li>
+                </ul>
 
 
                 <!-- Mobile Naviagation -->
-                <div class="md:hidden mobile-menu-brand">
-                    <a href="#home">Sai Abhinav</a>
-                </div>
                 <div class="md:hidden flex items-center">
                     <button class="outline-none mobile-menu-button">
                         <svg class="w-6 h-6 text-gray-500 dark:text-white" x-show="!showMenu" fill="none"
@@ -44,26 +64,38 @@
         <!-- Mobile Navbar -->
         <div class="hidden mobile-menu">
             <ul class="">
-                <li><a href="#home" class="block text-sm px-4 py-4">Home</a></li>
                 <li><a href="#about" class="block text-sm px-4 py-4">About</a></li>
-                <li><a href="#blog" class="block text-sm px-4 py-4">Blog</a></li>
+                <li><a href="#work" class="block text-sm px-4 py-4">Work</a></li>
                 <li><a href="#contact" class="block text-sm px-4 py-4">Contact</a></li>
+                <li>
+                    <a href="./assets/docs/Resume.pdf" download target="_blank"
+                        class="block m-4 text-sm border-2 text-neutral-600 dark:text-white border-neutral-600 hover:bg-neutral-600/20 dark:border-white dark:hover:bg-white/20 rounded px-3 py-1">Resume</a>
+                </li>
             </ul>
         </div>
     </nav>
 
+    <button type="button" onclick="toTop()" id="back-to-top"
+        class="hover:drop-shadow-2xl w-10 h-10 rounded-full fixed bottom-6 right-6 border-2 text-neutral-600 dark:text-white border-neutral-600 hover:bg-neutral-600/20 dark:border-white dark:hover:bg-white/20 flex justify-center items-center animate-bounce">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-up w-4 h-4" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+        </svg>
+    </button>
+
     <!-- Home Section -->
-    <section id="home" class="max-w-7xl md:px-0 px-5 pb-8 mx-auto h-screen flex flex-col">
+    <section id="home" class="max-w-7xl md:px-2 px-5 py-8 mx-auto h-screen flex flex-col">
         <div
-            class="px-2 py-16 w-full h-full grid gap-2 md:gap-8 md:grid-cols-2 md:grid-rows-1 grid-cols-1 grid-rows-2 content-center items-center">
+            class="py-16 w-full h-full grid gap-2 md:gap-8 md:grid-cols-2 md:grid-rows-1 grid-cols-1 grid-rows-2 content-center items-center">
             <div class="md:order-last">
-                <img src="./assets/imgs/avatar.png" alt="Sai Abhinav" class="w-3/4 m-auto rounded-full md:rounded-none">
+                <img src="./assets/imgs/avatar.png" alt="Sai Abhinav" class="w-3/4 m-auto rounded-full">
             </div>
             <div class="flex flex-col gap-3 text-center md:text-start">
-                <p class="text-3xl">Hi there, I'm</p>
-                <p class="text-4xl"><span class="font-bold">Sai Abhinav Reddy</span>,</p>
-                <p class="text-xl">Computer Science Graduate Student @ George Mason University | Ex-TCSer</p>
-                <div class="flex items-center justify-center md:justify-start gap-6 mt-8">
+                <p class="text-xl">Hi there, my name is</p>
+                <p class="text-4xl font-bold">Sai Abhinav Reddy</p>
+                <p class="text-xl">Computer Science Graduate Student @ George Mason University</p>
+                <div
+                    class="flex items-center justify-center md:justify-start gap-6 mt-8 network-links after:content-none md:after:content-[''] after:w-1/2 after:h-[1px] after:bg-neutral-800 dark:after:bg-white">
                     <a href="https://www.linkedin.com/in/saiabhinavreddy" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             class="bi bi-linkedin w-7 aspect-square opacity-75 hover:opacity-100 hover:scale-110"
@@ -86,8 +118,8 @@
 
         <div class="flex items-center justify-center w-full bottom-8">
             <a href="#about"
-                class="w-10 aspect-square rounded-full flex items-center justify-center border-2 border-current animate-bounce">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-1/2 dark:invert">
+                class="w-10 aspect-square rounded-full flex items-center justify-center border-2 text-neutral-600 dark:text-white border-neutral-600 hover:bg-neutral-600/20 dark:border-white dark:hover:bg-white/20 animate-bounce">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-1/3 dark:invert">
                     <path
                         d="M246.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 402.7 361.4 265.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-160 160zm160-352l-160 160c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 210.7 361.4 73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3z" />
                 </svg>
@@ -95,99 +127,92 @@
         </div>
     </section>
 
-    <!-- <section id="about" class="scroll-mt-20">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
+    <section id="about"
+        class="bg-white dark:bg-neutral-700 max-w-section md:mx-auto mx-2 my-8 p-7 min-h-section rounded-lg shadow-lg scroll-mt-22">
+        <div class="flex flex-col gap-8 h-full">
+            <h1 class="text-2xl border-b-2 w-fit pb-1">Somethings about me</h1>
+            <p>I am an aspiring data scientist who enjoys connecting the dots: be it ideas from different disciplines,
+                people from different teams, or applications from different industries. I have strong technical skills
+                and
+                an academic background in engineering, statistics, and machine learning.</p>
+
+
+            <p>My passion lies in solving business problems with tailored data and algorithms and communicating complex
+                ideas to non-technical stakeholders. I am able to jump across verticals to deliver high-performing AI
+                solutions.</p>
+
+
+            <p>In my graduate studies, I've taken on various leadership roles, including mentoring three undergraduate
+                interns, coordinating institute-wide research events for hundreds of people, and leading two journal
+                clubs.
+            </p>
+
+
+            <p>I'm graduating in May 2019 and I'm interested in full-time data science or machine learning roles. Please
+                feel free to get in touch with me via email at welove@resumeworded.com.</p>
+
+            <p>
+                Proficient: Python (scikit-learn, NumPy, SciPy, pandas), TensorFlow, Excel<br />
+                Knowledgeable: SQL, R, Spark (Spark SQL, MLLib, Pyspark)<br />
+                Familiar: NLP (Natural Language Processing), spaCy</p>
+        </div>
     </section>
 
-    <hr class="my-4">
+    <section id="work"
+        class="bg-white dark:bg-neutral-700 max-w-section md:mx-auto mx-2 my-8 p-7 scroll-mt-22 min-h-section rounded-lg shadow-lg">
+        <div class="flex flex-col gap-8 h-full">
+            <h1 class="text-2xl">My Work</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae
+                modi
+                unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque
+                libero
+                error.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae
+                modi
+                unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque
+                libero
+                error.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae
+                modi
+                unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque
+                libero
+                error.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae
+                modi
+                unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque
+                libero
+                error.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae
+                modi
+                unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque
+                libero
+                error.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae
+                modi
+                unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque
+                libero
+                error.</p>
 
-    <section id="blog">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
+        </div>
     </section>
 
-    <hr class="my-4">
-
-    <section id="contact">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae modi
-            unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque libero
-            error.</p>
-    </section> -->
+    <section id="contact"
+        class="max-w-section md:mx-auto mx-2 my-8 p-7 scroll-mt-22 min-h-section flex flex-col gap-12 justify-center items-center text-center relative">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+            class="bi bi-envelope absolute w-64 opacity-10 -z-[1] left-1/4 top-[12.5%] aspect-square"
+            viewBox="0 0 16 16">
+            <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+        </svg>
+        <div class="flex flex-col gap-8 h-full">
+            <p class="text-lg">You have question for me or want to say something...?</p>
+            <h1 class="text-2xl">Get In Touch</h1>
+            <p class="text-lg">My inbox is always open.</p>
+        </div>
+        <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank"
+            class="text-lg border-2 text-neutral-600 dark:text-white border-neutral-600 hover:bg-neutral-600/20 dark:border-white dark:hover:bg-white/20 rounded px-5 py-2">Send
+            a mail</a>
+    </section>
 </body>
 
 </html>
