@@ -17,91 +17,16 @@
 
     <!-- Theme Switch -->
     <button id="theme-toggle" type="button"
-        class="transition-all duration-150 hover:scale-125 rounded-lg text-sm p-2.5 fixed top-6 right-6">
+        class="transition-all duration-150 hover:scale-125 rounded-lg text-sm p-2.5 md:fixed absolute top-6 right-6 z-50">
         <img src="./assets/icons/icons8-moon.png" alt="Dark Theme" id="theme-toggle-dark-icon" class="w-12 h-12 hidden">
         <img src="./assets/icons/icons8-sun.png" alt="Dark Theme" id="theme-toggle-light-icon" class="w-12 h-12 hidden">
     </button>
 
     <!-- Back To Top Button -->
     <button type="button" onclick="toTop()" id="back-to-top"
-        class="w-10 h-10 text-4xl rounded-lg fixed bottom-6 right-6  flex justify-center items-center animate-bounce">
+        class="w-10 h-10 text-4xl rounded-lg fixed bottom-6 right-6  flex justify-center items-center animate-bounce z-50">
         &#9757;
     </button>
-
-    <!-- Navbar -->
-    <!-- <nav class="fixed top-0 left-0 right-0 transition-all duration-200 z-50">
-        <div class="max-w-7xl mx-auto py-4 px-4 md:px-0 nav-container transition-all duration-200">
-            <div class="flex justify-between items-center">
-                <div class="flex justify-start items-center gap-4">
-                    <a href="#home" id="logo"
-                        class="w-7 h-7 flex justify-center items-center border-2 transition-all duration-200 hover:scale-110 text-neutral-800 dark:text-white border-neutral-800 hover:bg-neutral-800 hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-neutral-800 rounded rotate-45">
-                        <span class="text-sm font-bold -rotate-45">SA</span>
-                    </a>
-                    <span class="flex md:hidden mobile-menu-brand">Sai Abhinav</span>
-                </div>
-
-                <ul class="hidden md:flex items-center space-x-7">
-                    <li class="py-4 px-2 text-sm hover:font-bold" data-inviewport="slide-down-op"
-                        data-inviewport-delay="50">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="py-4 px-2 text-sm hover:font-bold" data-inviewport="slide-down-op"
-                        data-inviewport-delay="100">
-                        <a href="#experience">Experience</a>
-                    </li>
-                    <li class="py-4 px-2 text-sm hover:font-bold" data-inviewport="slide-down-op"
-                        data-inviewport-delay="150">
-                        <a href="#work">Work</a>
-                    </li>
-                    <li class="py-4 px-2 text-sm hover:font-bold" data-inviewport="slide-down-op"
-                        data-inviewport-delay="200">
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li data-inviewport="slide-down-op" data-inviewport-delay="250">
-                        <a href="./assets/docs/Resume.pdf" download target="_blank"
-                            class="text-sm border-2 text-neutral-800 dark:text-white border-neutral-800 hover:bg-neutral-800/20 dark:border-white dark:hover:bg-white/20 rounded px-3 py-1">Resume</a>
-                    </li>
-                    <li>
-                        <button id="theme-toggle" type="button"
-                            class="opacity-70 hover:opacity-100 rounded-lg text-sm p-2.5">
-                            <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                            </svg>
-                            <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor"
-                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                                    fill-rule="evenodd" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                    </li>
-                </ul>
-
-                <div class="md:hidden flex items-center">
-                    <button class="outline-none mobile-menu-button">
-                        <svg class="w-6 h-6 text-gray-500 dark:text-white" x-show="!showMenu" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="hidden mobile-menu h-screen">
-            <ul class="flex flex-col items-center gap-4 py-8">
-                <li class="w-full text-center"><a href="#about" class="block text-sm px-4 py-4">About</a></li>
-                <li class="w-full text-center"><a href="#work" class="block text-sm px-4 py-4">Work</a></li>
-                <li class="w-full text-center"><a href="#contact" class="block text-sm px-4 py-4">Contact</a></li>
-                <li class="">
-                    <a href="./assets/docs/Resume.pdf" download target="_blank"
-                        class="block m-4 text-sm border-2 text-neutral-800 dark:text-white border-neutral-800 hover:bg-neutral-800/20 dark:border-white dark:hover:bg-white/20 rounded px-3 py-1">Resume</a>
-                </li>
-            </ul>
-        </div>
-    </nav> -->
 
     <!-- Home -->
     <section id="home" class="max-w-7xl md:px-2 px-5 py-8 mx-auto h-screen flex flex-col">
@@ -116,8 +41,7 @@
                         class="text-brand">Abhinav</span> Reddy
                 </p>
                 <p class="mt-4" data-inviewport="slide-up" data-inviewport-delay="300">I'm an experienced software
-                    engineer with a background in creating digital experiences. Currently, I'm persuing <span
-                        class="edu">master's</span> in
+                    engineer with a background in creating digital experiences. Currently, I'm persuing master's in
                     Computer Science @ George Mason University</p>
                 <div data-inviewport="slide-up" data-inviewport-delay="450"
                     class="flex items-center justify-center md:justify-start gap-6 mt-8 network-links md:before:content-none before:content-[''] before:w-1/4 before:h-[1px] before:bg-neutral-800 dark:before:bg-white after:content-[''] md:after:w-1/2 after:w-1/4 after:h-[1px] after:bg-neutral-800 dark:after:bg-white">
@@ -127,11 +51,11 @@
                     </a>
                     <a href="https://github.com/saiabhinav" target="_blank" data-inviewport="slide-up"
                         data-inviewport-delay="150">
-                        <img src="./assets/icons/icons8-github.svg" alt="Linkedin"
+                        <img src="./assets/icons/icons8-github.svg" alt="github"
                             class="w-12 aspect-square hover:scale-110">
                     </a>
                     <a href="mailto:saiabhinavvasepalli@gmail.com">
-                        <img src="./assets/icons/icons8-mail.svg" alt="Linkedin"
+                        <img src="./assets/icons/icons8-mail.svg" alt="Email"
                             class="w-12 aspect-square hover:scale-110">
                     </a>
                 </div>
@@ -139,92 +63,213 @@
         </div>
 
         <div class="flex items-center justify-center w-full bottom-8">
-            <a href="#about"
+            <button id="next" onclick="nextSection()"
                 class="w-10 aspect-square rounded-lg flex items-center justify-center text-4xl animate-bounce">
                 &#128071;
-            </a>
+            </button>
         </div>
     </section>
 
     <!-- About -->
-    <section id="about" class="max-w-section md:mx-auto mx-2 p-7 min-h-screen flex flex-col items-center justify-center">
-        <div class="flex flex-col gap-8 h-full md:w-7/12 w-full">
-            <h1 class="text-2xl border-b-4 border-brand w-fit pb-1">About me</h1>
-            <p>I am an aspiring data scientist who enjoys connecting the dots: be it ideas from different disciplines,
-                people from different teams, or applications from different industries. I have strong technical skills
+    <section id="about" 
+        class="max-w-section md:mx-auto mx-2 mt-32 p-7 flex flex-col md:items-center justify-center">
+        <div class="flex flex-col gap-8 h-full md:w-3/4 w-full">
+            <h1 class="text-2xl border-b-4 border-brand w-fit pb-1" data-inviewport="slide-up">About
+                me
+            </h1>
+            <p>I am an aspiring data scientist who enjoys connecting the dots: be it ideas from different
+                disciplines,
+                people from different teams, or applications from different industries. I have strong technical
+                skills
                 and
                 an academic background in engineering, statistics, and machine learning.</p>
-            <p>My passion lies in solving business problems with tailored data and algorithms and communicating complex
-                ideas to non-technical stakeholders. I am able to jump across verticals to deliver high-performing AI
+            <p>My passion lies in solving business problems with tailored data and algorithms and communicating
+                complex
+                ideas to non-technical stakeholders. I am able to jump across verticals to deliver high-performing
+                AI
                 solutions.</p>
         </div>
-        <!-- <div class="flex items-center justify-center w-full bottom-8">
-            <a href="#work"
-                class="w-10 aspect-square rounded-lg flex items-center justify-center text-4xl animate-bounce">
-                &#128071;
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" 
+        class="max-w-section md:mx-auto mx-2 p-7 mt-32 flex flex-col md:items-center justify-center">
+        <div class="flex flex-col gap-8 h-full md:w-3/4 w-full">
+            <h1 class="text-2xl border-b-4 border-brand w-fit pb-1" data-inviewport="slide-up">Skills
+            </h1>
+            <div class="grid md:grid-cols-4 grid-cols-1 gap-x-16 gap-y-8">
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-lg uppercase" data-inviewport="slide-right">Languages</h3>
+                    <ul class="grid gap-2 font-light">
+                        <li data-inviewport="slide-right" style="--x: 1;">JavaScript (ES6)</li>
+                        <li data-inviewport="slide-right" style="--x: 2;">TypeScript</li>
+                        <li data-inviewport="slide-right" style="--x: 3;">HTML</li>
+                        <li data-inviewport="slide-right" style="--x: 4;">CSS/Sass</li>
+                        <li data-inviewport="slide-right" style="--x: 5;">Java</li>
+                        <li data-inviewport="slide-right" style="--x: 6;">Python</li>
+                        <li data-inviewport="slide-right" style="--x: 7;">PHP 7</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-lg uppercase" data-inviewport="slide-right">Frameworks</h3>
+                    <ul class="grid gap-2 font-light">
+                        <li data-inviewport="slide-right" style="--x: 1;">Angular</li>
+                        <li data-inviewport="slide-right" style="--x: 2;">Angular Material</li>
+                        <li data-inviewport="slide-right" style="--x: 3;">React</li>
+                        <li data-inviewport="slide-right" style="--x: 4;">Flutter (Beginner)</li>
+                        <li data-inviewport="slide-right" style="--x: 5;">Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-lg uppercase" data-inviewport="slide-right">Libraries</h3>
+                    <ul class="grid gap-2 font-light">
+                        <li data-inviewport="slide-right" style="--x: 1;">Moment js</li>
+                        <li data-inviewport="slide-right" style="--x: 2;">Chart js</li>
+                        <li data-inviewport="slide-right" style="--x: 3;">Fusion Charts</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-lg uppercase" data-inviewport="slide-right">Technologies</h3>
+                    <ul class="grid gap-2 font-light">
+                        <li data-inviewport="slide-right" style="--x: 1;">NodeJS</li>
+                        <li data-inviewport="slide-right" style="--x: 2;">ExpressJS</li>
+                        <li data-inviewport="slide-right" style="--x: 3;">Ajax</li>
+                        <li data-inviewport="slide-right" style="--x: 4;">JSON</li>
+                        <li data-inviewport="slide-right" style="--x: 5;">REST</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-lg uppercase" data-inviewport="slide-right">Databases</h3>
+                    <ul class="grid gap-2 font-light">
+                        <li data-inviewport="slide-right" style="--x: 1;">MySQL</li>
+                        <li data-inviewport="slide-right" style="--x: 2;">MongoDB</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-lg uppercase" data-inviewport="slide-right">Methodologies</h3>
+                    <ul class="grid gap-2 font-light">
+                        <li data-inviewport="slide-right" style="--x: 1;">Bash</li>
+                        <li data-inviewport="slide-right" style="--x: 2;">Git, Github & Gitlab</li>
+                        <li data-inviewport="slide-right" style="--x: 3;">TDD</li>
+                        <li data-inviewport="slide-right" style="--x: 4;">Agile Development</li>
+                        <li data-inviewport="slide-right" style="--x: 5;">SDLC</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-lg uppercase" data-inviewport="slide-right">Soft Skills</h3>
+                    <ul class="grid gap-2 font-light">
+                        <li data-inviewport="slide-right" style="--x: 1;">Communication</li>
+                        <li data-inviewport="slide-right" style="--x: 2;">Team Work</li>
+                        <li data-inviewport="slide-right" style="--x: 3;">Problem Solving</li>
+                        <li data-inviewport="slide-right" style="--x: 4;">Flexibility</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience"
+        class="max-w-section md:mx-auto mx-2 p-7 mt-32 flex flex-col md:items-center justify-center">
+        <div class="flex flex-col gap-8 h-full md:w-3/4 w-full">
+            <h1 class="text-2xl border-b-4 border-brand w-fit pb-1" data-inviewport="slide-up">Experience
+            </h1>
+            <div class="grid gap-8 w-full">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2" data-inviewport="slide-up" data-inviewport-delay="150">
+                    <div class="grid justify-start items-center">
+                        <p class="text-lg">Tata Consultancy Services</p>
+                        <p class="font-light">Digital Systems Engineer</p>
+                    </div>
+                    <div class="grid text-sm font-light md:justify-end items-center md:text-end">
+                        <p>Jun 2019 - Jul 2022</p>
+                    <p>Hyderabad, India</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2" data-inviewport="slide-up" data-inviewport-delay="300">
+                    <div class="grid justify-start items-center">
+                        <p class="text-lg">Tata Consultancy Services</p>
+                        <p class="font-light">Software Developer Intern</p>
+                    </div>
+                    <div class="grid text-sm font-light md:justify-end items-center md:text-end">
+                        <p>Jan 2019 - Apr 2019</p>
+                        <p>Hyderabad, India</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2" data-inviewport="slide-up" data-inviewport-delay="450">
+                    <div class="grid justify-start items-center">
+                        <p class="text-lg">Urban Rider</p>
+                        <p class="font-light">Web Development Intern</p>
+                    </div>
+                    <div class="grid text-sm font-light md:justify-end items-center md:text-end">
+                        <p>Jan 2019 - Apr 2019</p>
+                        <p>Hyderabad, India (Remote)</p>
+                    </div>
+                </div>
+            </div>
+            <a href="./assets/docs/Resume.pdf" target="_blank" download class="mt-6 flex gap-2 items-center" data-inviewport="slide-right" data-inviewport-delay="750">
+                <h3 class="text-xl">View Resume</h3>
+                <img src="./assets/icons/icons8-external-link.svg" alt="External link" class="w-7">
             </a>
-        </div> -->
-    </section>
-
-    <!-- Work -->
-    <section id="work"
-        class="bg-white dark:bg-neutral-700 max-w-section md:mx-auto mx-2 my-8 p-7 scroll-mt-22 min-h-section rounded-lg shadow-lg">
-        <div class="flex flex-col gap-8 h-full">
-            <h1 class="text-2xl">My Work</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae
-                modi
-                unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque
-                libero
-                error.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae
-                modi
-                unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque
-                libero
-                error.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae
-                modi
-                unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque
-                libero
-                error.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae
-                modi
-                unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque
-                libero
-                error.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae
-                modi
-                unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque
-                libero
-                error.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sed ipsa ut reiciendis repudiandae
-                modi
-                unde atque. Ut, cum adipisci, aliquam sapiente provident pariatur eius, voluptates perferendis atque
-                libero
-                error.</p>
-
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact"
-        class="max-w-section md:mx-auto mx-2 my-8 p-7 scroll-mt-22 min-h-section flex flex-col gap-12 justify-center items-center text-center relative">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" data-inviewport="slide-down"
-            class="bi bi-envelope absolute w-64 opacity-10 -z-[1] left-1/4 top-[12.5%] aspect-square"
-            viewBox="0 0 16 16">
-            <path
-                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-        </svg>
-        <div class="flex flex-col gap-8 h-full" data-inviewport="slide-up">
-            <p class="text-lg">You have question for me or want to say something...?</p>
-            <h1 class="text-2xl">Get In Touch</h1>
-            <p class="text-lg">My inbox is always open.</p>
+    <!-- Projects -->
+    <section id="projects" class="max-w-section md:mx-auto mx-2 p-7 mt-32 flex flex-col md:items-center justify-center">
+        <div class="flex flex-col gap-8 h-full md:w-3/4 w-full">
+            <h1 class="text-2xl border-b-4 border-brand w-fit pb-1" data-inviewport="slide-up">Projects
+            </h1>
+            <div>
+                <h2 class="text-lg">Professional Projects</h2>
+            </div>
+            <div>
+                <h2 class="text-lg">Other Projects</h2>
+            </div>
         </div>
-        <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank" data-inviewport="slide-up"
-            data-inviewport-delay="150"
-            class="text-lg border-2 text-neutral-800 dark:text-white border-neutral-800 hover:bg-neutral-800/20 dark:border-white dark:hover:bg-white/20 rounded px-5 py-2">Send
-            a mail</a>
     </section>
 
+    <!-- Footer -->
+    <footer class="max-w-section md:mx-auto mx-2 mt-40 mb-8 px-7 py-4 flex md:flex-row flex-col-reverse justify-between items-center">
+        <div class="flex flex-col gap-1">
+            <p>Designed & Developed by</p><p>Sai Abhinav Reddy 🖖 2022</p>
+        </div>
+        <ul class="flex md:mb-0 text-center mb-8 gap-8 uppercase">
+            <li class="text-sm border-b-2 border-transparent md:hover:border-brand text-brand">
+                <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank" class="hidden md:flex">Email</a>
+                <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank" class="flex md:hidden">
+                    <img src="./assets/icons/icons8-mail.svg" alt="Email"
+                    class="w-8 aspect-square hover:scale-110">
+                </a>
+            </li>
+            <li class="text-sm border-b-2 border-transparent md:hover:border-brand text-brand">
+                <a href="https://www.twitter.com/SaiAbhinav16" target="_blank" class="hidden md:flex">Twitter</a>
+                <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank" class="flex md:hidden">
+                    <img src="./assets/icons/icons8-twitter.svg" alt="Twitter"
+                    class="w-8 aspect-square hover:scale-110">
+                </a>
+            </li>
+            <li class="text-sm border-b-2 border-transparent md:hover:border-brand text-brand flex items-center">
+                <a href="https://www.instagram.com/sai_abhinav" target="_blank" class="hidden md:flex">Instagram</a>
+                <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank" class="flex md:hidden">
+                    <img src="./assets/icons/icons8-instagram.svg" alt="instagram"
+                    class="w-6 aspect-square hover:scale-110">
+                </a>
+            </li>
+            <li class="text-sm border-b-2 border-transparent md:hover:border-brand text-brand">
+                <a href="https://github.com/saiabhinav" target="_blank" class="hidden md:flex">Github</a>
+                <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank" class="flex md:hidden">
+                    <img src="./assets/icons/icons8-github.svg" alt="github"
+                    class="w-8 aspect-square hover:scale-110">
+                </a>
+            </li>
+            <li class="text-sm border-b-2 border-transparent md:hover:border-brand text-brand flex items-center">
+                <a href="https://www.linkedin.com/in/saiabhinavreddy" target="_blank" class="hidden md:flex">Linkedin</a>
+                <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank" class="flex md:hidden">
+                    <img src="./assets/icons/icons8-linkedin.svg" alt="linkedin"
+                    class="w-8 aspect-square hover:scale-110">
+                </a>
+            </li>
+        </ul>
+    </footer>
 </body>
 
 </html>
