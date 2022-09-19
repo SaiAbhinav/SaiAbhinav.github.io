@@ -2,31 +2,29 @@ const btn = document.querySelector("button.mobile-menu-button");
 const menu = document.querySelector(".mobile-menu");
 const brand = document.querySelector(".mobile-menu-brand");
 const backToTop = document.querySelector("#back-to-top");
-const logo = document.querySelector("#logo");
-
-// btn.addEventListener("click", () => {
-//   menu.classList.toggle("hidden");
-// });
-
+const next = document.querySelector("#next");
 const nav = document.querySelector("nav");
 
 function afterScroll() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    // nav.classList.add("shadow-lg", "backdrop-blur-sm", "bg-white/80", "dark:bg-neutral-700/80");
-    // nav.querySelector(".nav-container").classList.add("py-2");
-    // brand.classList.add("py-4");
-    backToTop.style.display = "flex";
-  } else {
-    // nav.classList.remove("shadow-lg", "backdrop-blur-sm", "bg-white/80", "dark:bg-neutral-700/80");
-    // nav.querySelector(".nav-container").classList.remove("py-2");
-    // brand.classList.remove("py-4");
-    backToTop.style.display = "none";
-  }
+  backToTop.style.display =
+    document.body.scrollTop > window.innerHeight ||
+    document.documentElement.scrollTop > window.innerHeight
+      ? "flex"
+      : "none";
+
+  next.style.visibility =
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+      ? "hidden"
+      : "visible";
+}
+
+function nextSection() {
+  window.scrollBy({ top: window.innerHeight });
 }
 
 function toTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  window.scrollTo({ top: 0 });
 }
 
 const inViewport = (entries, observer) => {
