@@ -56,3 +56,11 @@ body {
   background-repeat: no-repeat;
   margin-right: 0.5rem
 }
+
+img[alt="external-link"] {
+  transition: 300ms;
+}
+
+.external-link:hover img[alt="external-link"] {
+  transform: translate(.25rem, -.25rem);
+}
