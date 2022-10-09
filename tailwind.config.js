@@ -5,7 +5,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'brand': '#3a83c1'
+        'brand': '#017BFE',
+        'brand-dark': {
+          600: '#242d40',
+          800: '#171C28'
+        } 
       },
       maxWidth: {
         'section': '82rem'
@@ -15,6 +19,9 @@ module.exports = {
       },
       scrollMargin: {
         '22': '5.5rem'
+      },
+      fontSize: {
+        '10xl': '10rem'
       }
     },
   },

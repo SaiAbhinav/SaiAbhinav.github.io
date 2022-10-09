@@ -1,0 +1,428 @@
+<!doctype html>
+<html class="scroll-smooth dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+
+    <title>Archive | Sai Abhinav</title>
+
+    <link rel="stylesheet" href="./css/compiled.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <script src="./js/scripts.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-slate-100 dark:bg-brand-dark-800 text-brand-dark-800 dark:text-white">
+
+    <!-- Theme Switch -->
+    <div class="md:fixed absolute top-8 right-8 z-50">
+        <input type="checkbox" checked class="checkbox" id="theme">
+        <label for="theme" class="label">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="fill-white w-3">
+                <path
+                    d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fill-white w-3">
+                <path
+                    d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM352 256c0 53-43 96-96 96s-96-43-96-96s43-96 96-96s96 43 96 96zm32 0c0-70.7-57.3-128-128-128s-128 57.3-128 128s57.3 128 128 128s128-57.3 128-128z" />
+            </svg>
+            <div class='ball'></div>
+        </label>
+    </div>
+
+    <!-- Back To Top Button -->
+    <button type="button" onclick="toTop()" id="back-to-top"
+        class="w-10 h-10 text-4xl rounded-lg fixed bottom-6 right-6  flex justify-center items-center animate-bounce z-50">
+        &#9757;
+    </button>
+
+    <!-- Projects -->
+    <section id="projects-list" class="max-w-section md:mx-auto p-8 flex flex-col min-h-screen">
+        <div class="flex flex-col gap-20 h-full">
+            <header class="flex flex-col mt-8 gap-4">
+                <h1 class="text-6xl text-brand">Archive</h1>
+                <p class="text-sm font-light font-mono">A list of projects that I've worked on</p>
+            </header>
+            <ul class="grid grid-cols-3 gap-4">
+                <li class="flex flex-col gap-4 shadow-lg p-6 bg-white dark:bg-brand-dark-600 rounded-lg">
+                    <div class="flex justify-between gap-4">
+                        <span title="Professional Project"><i class="bi bi-building text-3xl text-brand"></i></span>
+                    </div>
+                    <div class="flex flex-col gap-4 justify-between h-full">
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-2xl">US Retirement Platforms</h2>
+                            <div class="flex justify-between">
+                                <p class="text-sm font-light">Tata Consultancy Services</p>
+                                <p class="text-xs font-light italic"><span class="mr-2"><i
+                                            class="bi bi-calendar4-range text-brand"></i></span>May 2020 - Jun 2022</p>
+                            </div>
+                            <p class="font-light">The project offers a number of platform applications that help to
+                                digitize the
+                                process of creating and migrating various retirement plans.</p>
+                        </div>
+                        <ul class="flex items-center gap-1 font-mono text-brand text-light flex-wrap mt-2 w-full">
+                            <li class="text-xs">Angular 11
+                            </li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">HTML</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">SCSS</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">TypeScript
+                            </li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">Java</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">Docker</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">Magnolia CMS
+                            </li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">Chart.js
+                            </li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">Fusion Charts
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex flex-col gap-4 shadow-lg p-6 bg-white dark:bg-brand-dark-600 rounded-lg">
+                    <div class="flex justify-between gap-4">
+                        <span title="Professional Project"><i class="bi bi-building text-3xl text-brand"></i></span>
+                    </div>
+                    <div class="flex flex-col gap-4 justify-between h-full">
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-2xl">Insurance Finance Advisor Portal</h2>
+                            <div class="flex justify-between">
+                                <p class="text-sm font-light">Tata Consultancy Services</p>
+                                <p class="text-xs font-light italic"><span class="mr-2"><i
+                                            class="bi bi-calendar4-range text-brand"></i></span>Jun 2019 - Apr 2020</p>
+                            </div>
+                            <p class="font-light">The project allows IFAs to manage clients, their policies &
+                                projections.</p>
+                        </div>
+                        <ul class="flex items-center gap-1 font-mono text-brand text-light flex-wrap mt-2 w-full">
+                            <li class="text-xs">Angular 10
+                            </li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">HTML</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">SCSS</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">TypeScript
+                            </li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">Mongo DB
+                            </li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">Java</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex flex-col gap-4 shadow-lg p-6 bg-white dark:bg-brand-dark-600 rounded-lg">
+                    <div class="flex justify-between gap-4">
+                        <i class="bi bi-mortarboard text-3xl text-brand"></i>
+                    </div>
+                    <div class="flex flex-col gap-4 justify-between h-full">
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-2xl">Access Mechanism using IPFS</h2>
+                            <div class="flex justify-between">
+                                <p class="text-sm font-light">Amrita Vishwa Vidyapeetham</p>
+                                <p class="text-xs font-light italic"><span class="mr-2"><i
+                                            class="bi bi-calendar4-range text-brand"></i></span>Jun 2018 - Mar 2019</p>
+                            </div>
+                            <p class="font-light">The project uses a distributed and decentralized network architecture
+                                called
+                                InterPlanetary File System and Pretty Good Privacy (PGP) to transfer and secure
+                                data, addressing a trust issue that arises when transferring data through a service
+                                that relies on a broker.</p>
+                        </div>
+                        <ul class="flex items-center font-mono text-brand text-light flex-wrap gap-1 mt-2 w-full">
+                            <li class="text-xs">JAVA</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">Node.js</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">Shell Script
+                            </li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">Raspberry Pi
+                            </li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">IPFS</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex flex-col gap-4 shadow-lg p-6 bg-white dark:bg-brand-dark-600 rounded-lg">
+                    <div class="flex justify-between items-baseline gap-4">
+                        <i class="bi bi-mortarboard text-3xl text-brand"></i>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/SaiAbhinav/Mobi-Spec" class="hover:text-brand" target="_blank">
+                                <i class="bi bi-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 justify-between h-full">
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-2xl">Mobi-Spec</h2>
+                            <div class="flex justify-between">
+                                <p class="text-sm font-light">Amrita Vishwa Vidyapeetham</p>
+                                <p class="text-xs font-light italic"><span class="mr-2"><i
+                                            class="bi bi-calendar4-range text-brand"></i></span>Jun 2018 - Oct 2018</p>
+                            </div>
+                            <p class="font-light">The project shows the specifications of various smart phones.</p>
+                        </div>
+                        <ul class="flex items-center font-mono text-brand text-light flex-wrap gap-1 mt-2 w-full">
+                            <li class="text-xs">JAVA</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">HTML</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">CSS
+                            </li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">JavaScript
+                            </li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">XSLT</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex flex-col gap-4 shadow-lg p-6 bg-white dark:bg-brand-dark-600 rounded-lg">
+                    <div class="flex justify-between items-baseline gap-4">
+                        <i class="bi bi-mortarboard text-3xl text-brand"></i>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/SaiAbhinav/Smart-Fan-and-Light" class="hover:text-brand"
+                                target="_blank">
+                                <i class="bi bi-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 justify-between h-full">
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-2xl">Smart Fan & Smart Light</h2>
+                            <div class="flex justify-between">
+                                <p class="text-sm font-light">Amrita Vishwa Vidyapeetham</p>
+                                <p class="text-xs font-light italic"><span class="mr-2"><i
+                                            class="bi bi-calendar4-range text-brand"></i></span>Jun 2018 - Oct 2018</p>
+                            </div>
+                            <p class="font-light">
+                                The project allows users to control fans and lights using an Android app and Google
+                                voice assistant.</p>
+                        </div>
+                        <ul class="flex items-center font-mono text-brand text-light flex-wrap gap-1 mt-2 w-full">
+                            <li class="text-xs">JAVA (Android)</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">Audrino</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">IFTTT</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs">Adafruit IO (Cloud service)</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex flex-col gap-4 shadow-lg p-6 bg-white dark:bg-brand-dark-600 rounded-lg">
+                    <div class="flex justify-between items-baseline gap-4">
+                        <i class="bi bi-mortarboard text-3xl text-brand"></i>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/SaiAbhinav/Appetite" class="hover:text-brand" target="_blank">
+                                <i class="bi bi-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 justify-between h-full">
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-2xl">Restaurant Ordering System</h2>
+                            <div class="flex justify-between">
+                                <p class="text-sm font-light">Amrita Vishwa Vidyapeetham</p>
+                                <p class="text-xs font-light italic"><span class="mr-2"><i
+                                            class="bi bi-calendar4-range text-brand"></i></span>Jan 2018 - Apr 2018</p>
+                            </div>
+                            <p class="font-light">
+                                The website allows customers to select items from a menu of various cuisines and
+                                make payments. Main focus of this project is to learn and follow the Software
+                                Development Life Cycle.</p>
+                        </div>
+                        <ul class="flex items-center font-mono text-brand text-light flex-wrap gap-1 mt-2 w-full">
+                            <li class="text-xs ">PHP</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs ">HTML</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs ">CSS</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs ">MySQL</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex flex-col gap-4 shadow-lg p-6 bg-white dark:bg-brand-dark-600 rounded-lg">
+                    <div class="flex justify-between items-baseline gap-4">
+                        <i class="bi bi-mortarboard text-3xl text-brand"></i>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/SaiAbhinav/AmbleX-Software-Inc" class="hover:text-brand"
+                                target="_blank">
+                                <i class="bi bi-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 justify-between h-full">
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-2xl">Employee Information System</h2>
+                            <div class="flex justify-between">
+                                <p class="text-sm font-light">Amrita Vishwa Vidyapeetham</p>
+                                <p class="text-xs font-light italic"><span class="mr-2"><i
+                                            class="bi bi-calendar4-range text-brand"></i></span>Jul 2017 - Nov 2017</p>
+                            </div>
+                            <p class="font-light">
+                                The website helps an employer to manage employees, departments, skills & salaries.
+                                This project's main focus is to understand Database management and Normalization
+                                concepts.</p>
+                        </div>
+                        <ul class="flex items-center font-mono text-brand text-light flex-wrap gap-1 mt-2 w-full">
+                            <li class="text-xs ">PHP</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs ">HTML</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs ">CSS</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs ">JavaScript</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs ">MySQL</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex flex-col gap-4 shadow-lg p-6 bg-white dark:bg-brand-dark-600 rounded-lg">
+                    <div class="flex justify-between items-baseline gap-4">
+                        <i class="bi bi-house text-3xl text-brand"></i>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/SaiAbhinav/Expense-Logger" class="hover:text-brand"
+                                target="_blank">
+                                <i class="bi bi-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 justify-between h-full">
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-2xl">Expense Logger</h2>
+                            <div class="flex justify-between">
+                                <p class="text-sm font-light"></p>
+                                <p class="text-xs font-light italic"><span class="mr-2"><i
+                                            class="bi bi-calendar4-range text-brand"></i></span>Jun 2020</p>
+                            </div>
+                            <p class="font-light">
+                                A cross platform app to manage expenses.</p>
+                        </div>
+                        <ul class="flex items-center font-mono text-brand text-light flex-wrap gap-1 mt-2 w-full">
+                            <li class="text-xs ">Flutter</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs ">Dart</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex flex-col gap-4 shadow-lg p-6 bg-white dark:bg-brand-dark-600 rounded-lg">
+                    <div class="flex justify-between items-baseline gap-4">
+                        <i class="bi bi-house text-3xl text-brand"></i>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/SaiAbhinav/Flutter_Clone_AID" class="hover:text-brand"
+                                target="_blank">
+                                <i class="bi bi-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 justify-between h-full">
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-2xl">Amrita Info Desk Clone</h2>
+                            <div class="flex justify-between">
+                                <p class="text-sm font-light"></p>
+                                <p class="text-xs font-light italic"><span class="mr-2"><i
+                                            class="bi bi-calendar4-range text-brand"></i></span>Jun 2019</p>
+                            </div>
+                            <p class="font-light">
+                                Clone of Amrita Info Desk App.</p>
+                        </div>
+                        <ul class="flex items-center font-mono text-brand text-light flex-wrap gap-1 mt-2 w-full">
+                            <li class="text-xs ">Flutter</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs ">Dart</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="flex flex-col gap-4 shadow-lg p-6 bg-white dark:bg-brand-dark-600 rounded-lg">
+                    <div class="flex justify-between items-baseline gap-4">
+                        <i class="bi bi-house text-3xl text-brand"></i>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/SaiAbhinav/WhatsApp_Clone-DailyChat" class="hover:text-brand"
+                                target="_blank">
+                                <i class="bi bi-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 justify-between h-full">
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-2xl">Whats App Clone</h2>
+                            <div class="flex justify-between">
+                                <p class="text-sm font-light"></p>
+                                <p class="text-xs font-light italic"><span class="mr-2"><i
+                                            class="bi bi-calendar4-range text-brand"></i></span>May 2019</p>
+                            </div>
+                            <p class="font-light">
+                                Clone of Whats App chatting app.</p>
+                        </div>
+                        <ul class="flex items-center font-mono text-brand text-light flex-wrap gap-1 mt-2 w-full">
+                            <li class="text-xs ">Flutter</li>
+                            <i class="bi bi-dot"></i>
+                            <li class="text-xs ">Dart</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+        class="max-w-section md:mx-auto mx-2 mt-40 mb-8 px-7 py-4 flex md:flex-row flex-col-reverse justify-between items-center">
+        <div class="flex flex-col gap-1">
+            <p>Designed & Developed by</p>
+            <p>Sai Abhinav Reddy 🖖 2022</p>
+        </div>
+        <ul class="flex md:mb-0 text-center mb-8 gap-8 uppercase">
+            <li class="text-sm border-b-2 border-transparent md:hover:border-brand text-brand">
+                <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank" class="hidden md:flex">Email</a>
+                <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank" class="flex md:hidden">
+                    <img src="./assets/icons/icons8-mail.svg" alt="Email" class="w-8 aspect-square hover:scale-110">
+                </a>
+            </li>
+            <li class="text-sm border-b-2 border-transparent md:hover:border-brand text-brand">
+                <a href="https://www.twitter.com/SaiAbhinav16" target="_blank" class="hidden md:flex">Twitter</a>
+                <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank" class="flex md:hidden">
+                    <img src="./assets/icons/icons8-twitter.svg" alt="Twitter"
+                        class="w-8 aspect-square hover:scale-110">
+                </a>
+            </li>
+            <li class="text-sm border-b-2 border-transparent md:hover:border-brand text-brand flex items-center">
+                <a href="https://www.instagram.com/sai_abhinav" target="_blank" class="hidden md:flex">Instagram</a>
+                <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank" class="flex md:hidden">
+                    <img src="./assets/icons/icons8-instagram.svg" alt="instagram"
+                        class="w-6 aspect-square hover:scale-110">
+                </a>
+            </li>
+            <li class="text-sm border-b-2 border-transparent md:hover:border-brand text-brand">
+                <a href="https://github.com/saiabhinav" target="_blank" class="hidden md:flex">Github</a>
+                <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank" class="flex md:hidden">
+                    <img src="./assets/icons/icons8-github.svg" alt="github" class="w-8 aspect-square hover:scale-110">
+                </a>
+            </li>
+            <li class="text-sm border-b-2 border-transparent md:hover:border-brand text-brand flex items-center">
+                <a href="https://www.linkedin.com/in/saiabhinavreddy" target="_blank"
+                    class="hidden md:flex">Linkedin</a>
+                <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank" class="flex md:hidden">
+                    <img src="./assets/icons/icons8-linkedin.svg" alt="linkedin"
+                        class="w-8 aspect-square hover:scale-110">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="./css/compiled.css">
     <link rel="stylesheet" href="./css/custom.css">
     <script src="./js/scripts.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
-<body class="bg-slate-100 dark:bg-neutral-800 text-neutral-800 dark:text-white">
+<body class="bg-slate-100 dark:bg-brand-dark-800 text-brand-dark-800 dark:text-white">
 
     <!-- Theme Switch -->
     <div class="md:fixed absolute top-8 right-8 z-50">
@@ -38,30 +40,24 @@
     </button>
 
     <!-- Home -->
-    <section id="home" class="max-w-7xl md:px-2 px-5 py-8 mx-auto h-screen flex flex-col">
-        <div
-            class="pb-16 md:pt-16 w-full h-full grid gap-2 md:gap-8 md:grid-cols-2 md:grid-rows-1 grid-cols-1 grid-rows-2 content-center items-center">
-            <div class="md:order-last" data-inviewport="slide-down-op">
-                <img src="./assets/imgs/avatar.png" alt="Sai Abhinav" class="w-3/4 m-auto rounded-full">
-            </div>
-            <div class="flex flex-col gap-3 text-center md:text-start">
-                <p class="text-xl" data-inviewport="slide-up">Hi there &#128075;, my name is</p>
-                <p class="text-5xl font-bold" data-inviewport="slide-up" data-inviewport-delay="150">Sai <span
-                        class="text-brand">Abhinav</span> Reddy
+    <section id="home" class="max-w-section p-8 mx-auto h-screen flex flex-col">
+        <div class="pb-16 md:pt-16 md:w-1/2 grid items-center w-full h-full mx-auto">
+            <div class="flex flex-col gap-3 text-center">
+                <p class="text-xl">Hi there &#128075;, my name is</p>
+                <p class="text-5xl font-bold">Sai <span class="text-brand">Abhinav</span> Reddy
                 </p>
-                <p class="mt-4 text-lg" data-inviewport="slide-up" data-inviewport-delay="300">
+                <p class="mt-4 text-lg font-light">
                     I am a full-stack software engineer with a keen eye for design who is focused on creating appealing
                     user interfaces and engaging digital experiences. I also have a strong desire to learn about and try
                     out new technologies in a challenging environment.
                 </p>
-                <div data-inviewport="slide-up" data-inviewport-delay="450"
-                    class="flex items-center justify-center md:justify-start gap-6 mt-8 network-links md:before:content-none before:content-[''] before:w-1/4 before:h-[1px] before:bg-neutral-800 dark:before:bg-white after:content-[''] md:after:w-1/2 after:w-1/4 after:h-[1px] after:bg-neutral-800 dark:after:bg-white">
-                    <a href="https://www.linkedin.com/in/saiabhinavreddy" target="_blank" data-inviewport="slide-up">
+                <div
+                    class="flex items-center justify-center gap-6 mt-8 network-links before:content-[''] before:w-1/4 before:h-[1px] before:bg-brand-dark-800/25 dark:before:bg-white/25 after:content-[''] after:w-1/4 after:h-[1px] after:bg-brand-dark-800/25 dark:after:bg-white/25">
+                    <a href="https://www.linkedin.com/in/saiabhinavreddy" target="_blank">
                         <img src="./assets/icons/icons8-linkedin.svg" alt="Linkedin"
                             class="w-12 aspect-square hover:scale-110">
                     </a>
-                    <a href="https://github.com/saiabhinav" target="_blank" data-inviewport="slide-up"
-                        data-inviewport-delay="150">
+                    <a href="https://github.com/saiabhinav" target="_blank" data-inviewport-delay="150">
                         <img src="./assets/icons/icons8-github.svg" alt="github"
                             class="w-12 aspect-square hover:scale-110">
                     </a>
@@ -81,558 +77,267 @@
         </div>
     </section>
 
-    <!-- TODO: About -->
-    <section id="about" class="max-w-section md:mx-auto mx-2 mt-32 p-7 flex flex-col md:items-center justify-center">
-        <div class="flex flex-col gap-8 h-full md:w-3/4 w-full">
-            <h1 class="text-2xl border-b-4 border-brand w-fit pb-1" data-inviewport="slide-up">About
+    <!-- About -->
+    <section id="about" class="max-w-section md:mx-auto p-8 min-h-screen flex flex-col justify-center items-center">
+        <div class="flex flex-col gap-2 h-full md:w-4/5 w-full">
+            <h1
+                class="text-2xl font-semibold text-brand w-full pb-1 tracking-widest after:bg-brand-dark-800 dark:after:bg-white">
+                About
                 me
             </h1>
-            <div class="flex flex-col gap-4 leading-relaxed">
-                <p class="mt-4 text-lg" data-inviewport="slide-up" data-inviewport-delay="150">I'm currently persuing
+            <div class="flex flex-col font-light gap-2 leading-relaxed">
+                <p class="mt-4 text-lg">I'm currently persuing
                     master's in
-                    Computer Science @ George Mason University, Fairfax VA.</p>
-                <p class="mt-4 text-lg" data-inviewport="slide-up" data-inviewport-delay="200">Previously, I worked as
+                    <span class="font-normal">Computer Science @ George Mason University</span>, Fairfax VA.
+                </p>
+                <p class="mt-4 text-lg">Previously, I worked as
                     a full stack software engineer developing digital solutions for Banking, Financial Services, and
                     Insurance sector (BFSI).</p>
-                <p class="mt-4 text-lg" data-inviewport="slide-up" data-inviewport-delay="250">As a software engineer, I take pleasure in developing interactive applications
+                <p class="mt-4 text-lg">As a software engineer, I
+                    take pleasure in developing interactive applications
                     with my technical skills and acute sense of aesthetics to produce a stunning product. My objective
                     is to always create applications that offer engaging, pixel-perfect user experiences while being
                     scalable and efficient in the background.</p>
-                <p class="mt-4 text-lg" data-inviewport="slide-up" data-inviewport-delay="300">When I'm not in front of my system, I like to either travel & explore places or netflix & chill.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="max-w-section md:mx-auto mx-2 p-7 mt-32 flex flex-col md:items-center justify-center">
-        <div class="flex flex-col gap-8 h-full md:w-3/4 w-full">
-            <h1 class="text-2xl border-b-4 border-brand w-fit pb-1" data-inviewport="slide-up">Skills
-            </h1>
-            <div class="grid md:grid-cols-4 grid-cols-1 gap-x-16 gap-y-8">
-                <div class="flex flex-col gap-2">
-                    <h3 class="text-lg uppercase" data-inviewport="slide-right">Languages</h3>
-                    <ul class="grid gap-2 font-light">
-                        <li data-inviewport="slide-right" style="--x: 1;">JavaScript (ES6)</li>
-                        <li data-inviewport="slide-right" style="--x: 2;">TypeScript</li>
-                        <li data-inviewport="slide-right" style="--x: 3;">HTML</li>
-                        <li data-inviewport="slide-right" style="--x: 4;">CSS/Sass</li>
-                        <li data-inviewport="slide-right" style="--x: 5;">Java</li>
-                        <li data-inviewport="slide-right" style="--x: 6;">Python</li>
-                        <li data-inviewport="slide-right" style="--x: 7;">PHP 7</li>
-                    </ul>
-                </div>
-                <div class="flex flex-col gap-2">
-                    <h3 class="text-lg uppercase" data-inviewport="slide-right">Frameworks</h3>
-                    <ul class="grid gap-2 font-light">
-                        <li data-inviewport="slide-right" style="--x: 1;">Angular</li>
-                        <li data-inviewport="slide-right" style="--x: 2;">Angular Material</li>
-                        <li data-inviewport="slide-right" style="--x: 3;">React</li>
-                        <li data-inviewport="slide-right" style="--x: 4;">Flutter (Beginner)</li>
-                        <li data-inviewport="slide-right" style="--x: 5;">Tailwind CSS</li>
-                        <li data-inviewport="slide-right" style="--x: 6;">Bootstrap</li>
-                    </ul>
-                </div>
-                <div class="flex flex-col gap-2">
-                    <h3 class="text-lg uppercase" data-inviewport="slide-right">Libraries</h3>
-                    <ul class="grid gap-2 font-light">
-                        <li data-inviewport="slide-right" style="--x: 1;">Moment JS</li>
-                        <li data-inviewport="slide-right" style="--x: 2;">Chart JS</li>
-                        <li data-inviewport="slide-right" style="--x: 3;">Fusion Charts</li>
-                        <li data-inviewport="slide-right" style="--x: 4;">Quill JS</li>
-                    </ul>
-                </div>
-                <div class="flex flex-col gap-2">
-                    <h3 class="text-lg uppercase" data-inviewport="slide-right">Technologies</h3>
-                    <ul class="grid gap-2 font-light">
-                        <li data-inviewport="slide-right" style="--x: 1;">NodeJS</li>
-                        <li data-inviewport="slide-right" style="--x: 2;">ExpressJS</li>
-                        <li data-inviewport="slide-right" style="--x: 3;">Ajax</li>
-                        <li data-inviewport="slide-right" style="--x: 4;">JSON</li>
-                        <li data-inviewport="slide-right" style="--x: 5;">REST</li>
-                    </ul>
-                </div>
-                <div class="flex flex-col gap-2">
-                    <h3 class="text-lg uppercase" data-inviewport="slide-right">Databases</h3>
-                    <ul class="grid gap-2 font-light">
-                        <li data-inviewport="slide-right" style="--x: 1;">MySQL</li>
-                        <li data-inviewport="slide-right" style="--x: 2;">MongoDB</li>
-                    </ul>
-                </div>
-                <div class="flex flex-col gap-2">
-                    <h3 class="text-lg uppercase" data-inviewport="slide-right">Methodologies</h3>
-                    <ul class="grid gap-2 font-light">
-                        <li data-inviewport="slide-right" style="--x: 1;">Bash</li>
-                        <li data-inviewport="slide-right" style="--x: 2;">Git, Github & Gitlab</li>
-                        <li data-inviewport="slide-right" style="--x: 3;">TDD</li>
-                        <li data-inviewport="slide-right" style="--x: 4;">Agile Development</li>
-                        <li data-inviewport="slide-right" style="--x: 5;">SDLC</li>
-                    </ul>
-                </div>
-                <div class="flex flex-col gap-2">
-                    <h3 class="text-lg uppercase" data-inviewport="slide-right">Soft Skills</h3>
-                    <ul class="grid gap-2 font-light">
-                        <li data-inviewport="slide-right" style="--x: 1;">Communication</li>
-                        <li data-inviewport="slide-right" style="--x: 2;">Team Work</li>
-                        <li data-inviewport="slide-right" style="--x: 3;">Problem Solving</li>
-                        <li data-inviewport="slide-right" style="--x: 4;">Flexibility</li>
-                    </ul>
-                </div>
+                <p class="mt-4 text-lg">When I'm not in front of
+                    my system, I like to either travel & explore places or netflix & chill.</p>
             </div>
         </div>
     </section>
 
     <!-- Experience -->
     <section id="experience"
-        class="max-w-section md:mx-auto mx-2 p-7 mt-32 flex flex-col md:items-center justify-center">
-        <div class="flex flex-col gap-8 h-full md:w-3/4 w-full">
-            <h1 class="text-2xl border-b-4 border-brand w-fit pb-1" data-inviewport="slide-up">Experience
+        class="max-w-section md:mx-auto p-8 flex flex-col min-h-screen items-center justify-center">
+        <div class="flex flex-col gap-8 h-full md:w-4/5 w-full">
+            <h1
+                class="text-2xl font-semibold text-brand w-full pb-1 tracking-widest after:bg-brand-dark-800 dark:after:bg-white">
+                Where I've worked
             </h1>
             <ul class="grid gap-8 w-full">
-                <li class="grid grid-cols-1 md:grid-cols-2 gap-2" data-inviewport="slide-up"
-                    data-inviewport-delay="150">
-                    <div class="grid justify-start items-center">
-                        <p class="text-lg">Tata Consultancy Services</p>
-                        <p class="font-light">Digital Systems Engineer</p>
+                <li class="grid grid-cols-1 md:grid-cols-2 gap-2" data-inviewport-delay="150">
+                    <div class="grid gap-1 justify-start items-center">
+                        <p class="text-lg">Digital Systems Engineer</p>
+                        <p class="font-light">Tata Consultancy Services</p>
                     </div>
                     <div class="grid text-sm md:justify-end items-center md:text-end">
                         <p>Jun 2019 - Jul 2022</p>
                         <p class="font-light">Hyderabad, India</p>
                     </div>
                 </li>
-                <hr class="opacity-30" data-inviewport="slide-up-nop">
-                <li class="grid grid-cols-1 md:grid-cols-2 gap-2" data-inviewport="slide-up"
-                    data-inviewport-delay="300">
-                    <div class="grid justify-start items-center">
-                        <p class="text-lg">Tata Consultancy Services</p>
-                        <p class="font-light">Software Developer Intern</p>
+                <li class="grid grid-cols-1 md:grid-cols-2 gap-2" data-inviewport-delay="300">
+                    <div class="grid gap-1 justify-start items-center">
+                        <p class="text-lg">Software Developer Intern</p>
+                        <p class="font-light">Tata Consultancy Services</p>
                     </div>
                     <div class="grid text-sm md:justify-end items-center md:text-end">
                         <p>Jan 2019 - Apr 2019</p>
                         <p class="font-light">Hyderabad, India</p>
                     </div>
                 </li>
-                <hr class="opacity-30" data-inviewport="slide-up-nop">
-                <li class="grid grid-cols-1 md:grid-cols-2 gap-2" data-inviewport="slide-up"
-                    data-inviewport-delay="450">
+                <li class="grid grid-cols-1 md:grid-cols-2 gap-2" data-inviewport-delay="450">
                     <div class="grid justify-start items-center">
-                        <p class="text-lg">Urban Rider</p>
-                        <p class="font-light">Web Development Intern</p>
+                        <p class="text-lg">Web Development Intern</p>
+                        <p class="font-light">Urban Rider</p>
                     </div>
-                    <div class="grid text-sm md:justify-end items-center md:text-end">
+                    <div class="grid text-sm md:justify-end items-center md:text-end font-light">
                         <p>Apr 2018 - Jun 2018</p>
-                        <p class="font-light">Hyderabad, India (Remote)</p>
+                        <p>Hyderabad, India (Remote)</p>
                     </div>
                 </li>
             </ul>
             <a href="./assets/docs/Resume.pdf" target="_blank" download
-                class="mt-6 flex gap-2 items-center external-link" data-inviewport="slide-right"
-                data-inviewport-delay="750">
+                class="mt-6 flex gap-2 items-center external-link" data-inviewport-delay="750">
                 <h3 class="text-xl">View Resume</h3>
-                <img src="./assets/icons/icons8-external-link.svg" alt="external-link" class="w-7">
+                <i class="bi bi-box-arrow-up-right text-xl text-brand"></i>
             </a>
         </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="max-w-section md:mx-auto mx-2 p-7 mt-32 flex flex-col md:items-center justify-center">
-        <div class="flex flex-col gap-10 h-full md:w-3/4 w-full">
-            <h1 class="text-2xl border-b-4 border-brand w-fit pb-1" data-inviewport="slide-up">Projects
+    <section id="projects" class="max-w-section md:mx-auto p-8 flex flex-col min-h-screen items-center justify-center">
+        <div class="flex flex-col gap-10 h-full md:w-4/5 w-full">
+            <h1
+                class="text-2xl font-semibold text-brand w-full pb-1 tracking-widest after:bg-brand-dark-800 dark:after:bg-white">
+                Somethings I've worked on
             </h1>
-            <ul class="flex flex-col gap-10">
-                <!-- Professional Projects -->
-                <li class="professional">
-                    <div class="flex flex-col gap-6">
-                        <h2 class="text-lg border-b border-brand w-fit">Professional Projects</h2>
-                        <ul class="grid gap-6 w-full">
-                            <li class="flex flex-col gap-2" data-inviewport="slide-up" data-inviewport-delay="150">
-                                <div class="flex flex-col md:flex-row justify-between gap-4">
-                                    <a nohref class="flex gap-2 external-link">
-                                        <p class="text-lg">US Retirement Platforms</p>
-                                    </a>
-                                    <p class="text-sm">May 2020 - Jun 2022</p>
-                                </div>
-                                <p class="text-sm font-light">Tata Consultancy Services</p>
-                                <p class="md:w-4/5 w-full text-sm leading-relaxed">
-                                    The project offers a number of platform applications that help to digitize the
-                                    process of creating and migrating various retirement plans.
-                                </p>
-                                <div class="flex flex-col gap-2 font-light text-sm">
-                                    <h4 class="text-md">Responsibilities</h4>
-                                    <ul class="list-disc ml-8 md:w-4/5 w-full leading-relaxed">
-                                        <li>Developed a module to manage participant beneficiaries and their
-                                            allocations.</li>
-                                        <li>Developed a document center module which allows various stakeholders to
-                                            organize & share plan-related documents.</li>
-                                    </ul>
-                                </div>
-                                <ul class="flex flex-wrap gap-2 mt-2 md:w-4/5 w-full">
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Angular 11
-                                    </li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">HTML</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">SCSS</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">TypeScript
-                                    </li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Mongo DB
-                                    </li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">My SQL</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Java</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Docker</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Magnolia CMS
-                                    </li>
-                                </ul>
+            <ul class="flex flex-col gap-16">
+                <li class="relative flex flex-col gap-6 items-end">
+                    <span class="absolute text-10xl opacity-10 -top-[12%] left-[12%]">01</span>
+                    <div class="flex flex-col gap-1 text-end">
+                        <p class="font-light text-brand text-sm">Professional Project</p>
+                        <p class="text-xl">US Retirement Platforms</p>
+                        <div class="font-light text-sm">
+                            <p>Tata Consultancy Services</p>
+                            <p>May 2020 - Jun 2022</p>
+                        </div>
+                    </div>
+                    <div class="w-3/4 text-end shadow-lg p-6 bg-white dark:bg-brand-dark-600 rounded-lg">
+                        The project offers a number of platform applications that help to digitize the
+                        process of creating and migrating various retirement plans.
+                        <ul class="flex flex-col items-end gap-1 mt-4 font-light">
+                            <li class="flex gap-2">
+                                <span>Developed a module to manage participant beneficiaries and their
+                                    allocations.</span>
+                                <span><i class="bi bi-caret-left text-brand"></i></span>
                             </li>
-                            <hr class="opacity-30" data-inviewport="slide-up-nop" data-inviewport-delay="150">
-                            <li class="flex flex-col gap-2" data-inviewport="slide-up" data-inviewport-delay="150">
-                                <div class="flex flex-col md:flex-row justify-between gap-4">
-                                    <a nohref class="flex gap-2 external-link">
-                                        <p class="text-lg">Insurance Finance Advisor Portal</p>
-                                    </a>
-                                    <p class="text-sm">Jun 2019 - Apr 2020</p>
-                                </div>
-                                <p class="text-sm font-light">Tata Consultancy Services</p>
-                                <p class="md:w-4/5 w-full text-sm leading-relaxed">
-                                    The project allows IFAs to manage clients, their policies & projections.
-                                </p>
-                                <div class="flex flex-col gap-2 font-light text-sm">
-                                    <h4 class="text-md">Responsibilities</h4>
-                                    <ul class="list-disc ml-8 md:w-4/5 w-full leading-relaxed">
-                                        <li>Developed a module that allows advisors to add new clients and create
-                                            policies.</li>
-                                        <li>Developed a logging module that tracks different user patterns.</li>
-                                    </ul>
-                                </div>
-                                <ul class="flex flex-wrap gap-2 mt-2 md:w-4/5 w-full">
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Angular 10
-                                    </li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">HTML</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">SCSS</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">TypeScript
-                                    </li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Mongo DB
-                                    </li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Java</li>
-                                </ul>
+                            <li class="flex gap-2">
+                                <span>Developed a document center module which allows various stakeholders to organize &
+                                    share plan-related documents.</span>
+                                <span><i class="bi bi-caret-left text-brand"></i></span>
                             </li>
                         </ul>
                     </div>
+                    <ul class="flex items-center text-brand font-mono flex-wrap justify-end gap-1 mt-2 md:w-4/5 w-full">
+                        <li class="text-xs">Angular 11
+                        </li>
+                        <i class="bi bi-dot"></i>
+                        <li class="text-xs">HTML</li>
+                        <i class="bi bi-dot"></i>
+                        <li class="text-xs">SCSS</li>
+                        <i class="bi bi-dot"></i>
+                        <li class="text-xs">TypeScript
+                        </li>
+                        <i class="bi bi-dot"></i>
+                        <li class="text-xs">Java</li>
+                        <i class="bi bi-dot"></i>
+                        <li class="text-xs">Docker</li>
+                        <i class="bi bi-dot"></i>
+                        <li class="text-xs">Magnolia CMS
+                        </li>
+                        <i class="bi bi-dot"></i>
+                        <li class="text-xs">Chart.js
+                        </li>
+                        <i class="bi bi-dot"></i>
+                        <li class="text-xs">Fusion Charts
+                        </li>
+                    </ul>
                 </li>
-                <!-- Academic Projects -->
-                <li class="academic">
-                    <div class="flex flex-col gap-6">
-                        <h2 class="text-lg border-b border-brand w-fit">Academic Projects</h2>
-                        <ul class="grid gap-6 w-full">
-                            <li class="flex flex-col gap-2" data-inviewport="slide-up" data-inviewport-delay="150">
-                                <div class="flex flex-col md:flex-row justify-between gap-4">
-                                    <a nohref class="flex gap-2 external-link">
-                                        <p class="text-lg">Access Mechanism using IPFS</p>
-                                    </a>
-                                    <p class="text-sm">Jun 2018 - Mar 2019</p>
-                                </div>
-                                <p class="text-sm font-light">Amrita Vishwa Vidyapeetham</p>
-                                <p class="md:w-4/5 w-full text-sm leading-relaxed">
-                                    The project uses a distributed and decentralized network architecture called
-                                    InterPlanetary File System and Pretty Good Privacy (PGP) to transfer and secure
-                                    data, addressing a trust issue that arises when transferring data through a service
-                                    that relies on a broker.
-                                </p>
-                                <div class="flex flex-col gap-2 font-light text-sm">
-                                    <h4 class="text-md">Responsibilities</h4>
-                                    <ul class="list-disc ml-8 md:w-4/5 w-full leading-relaxed">
-                                        <li>Developed a node script that executes necessary shell commands on a
-                                            Raspberry Pi.</li>
-                                        <li>Assisted in developing a working prototype by using raspberry pi and a servo
-                                            motor.</li>
-                                    </ul>
-                                </div>
-                                <ul class="flex flex-wrap gap-2 mt-2">
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">JAVA</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Node JS</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Shell Script
-                                    </li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Raspberry Pi
-                                    </li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">IPFS</li>
-                                </ul>
+                <li class="relative flex flex-col gap-6 items-start">
+                    <span class="absolute text-10xl opacity-10 -top-[12%] right-[12%]">02</span>
+                    <div class="flex flex-col gap-1 text-start">
+                        <p class="font-light text-brand text-sm">Professional Project</p>
+                        <p class="text-xl">Insurance Finance Advisor Portal</p>
+                        <div class="font-light text-sm">
+                            <p>Tata Consultancy Services</p>
+                            <p>Jun 2019 - Apr 2020</p>
+                        </div>
+                    </div>
+                    <div class="w-3/4 text-start shadow-lg p-6 bg-white dark:bg-brand-dark-600 rounded-lg">
+                        The project allows IFAs to manage clients, their policies & projections.
+                        <ul class="flex flex-col items-start gap-1 mt-4 font-light">
+                            <li class="flex gap-2">
+                                <span><i class="bi bi-caret-right text-brand"></i></span>
+                                <span>Developed a module that allows advisors to add new clients and create
+                                    policies.</span>
                             </li>
-                            <hr class="opacity-30" data-inviewport="slide-up-nop" data-inviewport-delay="150">
-                            <li class="flex flex-col gap-2" data-inviewport="slide-up" data-inviewport-delay="150">
-                                <div class="flex flex-col md:flex-row justify-between gap-4">
-                                    <a href="https://github.com/SaiAbhinav/Mobi-Spec" target="_blank"
-                                        class="flex gap-2 external-link">
-                                        <p class="text-lg">Mobi-Spec</p>
-                                        <img src="./assets/icons/github-link.svg" alt="external-link" class="w-5">
-                                    </a>
-                                    <p class="text-sm">Jun 2018 - Oct 2018</p>
-                                </div>
-                                <p class="text-sm font-light">Amrita Vishwa Vidyapeetham</p>
-                                <p class="md:w-4/5 w-full text-sm leading-relaxed">
-                                    The project shows the specifications of various smart phones.
-                                </p>
-                                <ul class="flex flex-wrap gap-2 mt-2">
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">JAVA</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">HTML</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">CSS</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">JavaScript
-                                    </li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">XSLT</li>
-                                </ul>
-                            </li>
-                            <hr class="opacity-30" data-inviewport="slide-up-nop" data-inviewport-delay="150">
-                            <li class="flex flex-col gap-2" data-inviewport="slide-up" data-inviewport-delay="150">
-                                <div class="flex flex-col md:flex-row justify-between gap-4">
-                                    <a href="https://github.com/SaiAbhinav/Smart-Fan-and-Light" target="_blank"
-                                        class="flex gap-2 external-link">
-                                        <p class="text-lg">Smart Fan & Smart Light</p>
-                                        <img src="./assets/icons/github-link.svg" alt="external-link" class="w-5">
-                                    </a>
-                                    <p class="text-sm">Jun 2018 - Oct 2018</p>
-                                </div>
-                                <p class="text-sm font-light">Amrita Vishwa Vidyapeetham</p>
-                                <p class="md:w-4/5 w-full text-sm leading-relaxed">
-                                    The project allows users to control fans and lights using an Android app and Google
-                                    voice assistant.
-                                </p>
-                                <ul class="flex flex-wrap gap-2 mt-2">
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">JAVA
-                                        (Android)</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Audrino</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">IFTTT</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Adafruit IO
-                                        (Cloud service)</li>
-                                </ul>
-                            </li>
-                            <hr class="opacity-30" data-inviewport="slide-up-nop" data-inviewport-delay="150">
-                            <li class="flex flex-col gap-2" data-inviewport="slide-up" data-inviewport-delay="150">
-                                <div class="flex flex-col md:flex-row justify-between gap-4">
-                                    <a href="https://github.com/SaiAbhinav/Appetite" target="_blank"
-                                        class="flex gap-2 external-link">
-                                        <p class="text-lg">Restaurant Ordering System</p>
-                                        <img src="./assets/icons/github-link.svg" alt="external-link" class="w-5">
-                                    </a>
-                                    <p class="text-sm">Jan 2018 - Apr 2018</p>
-                                </div>
-                                <p class="text-sm font-light">Amrita Vishwa Vidyapeetham</p>
-                                <p class="md:w-4/5 w-full text-sm leading-relaxed">
-                                    The website allows customers to select items from a menu of various cuisines and
-                                    make payments. Main focus of this project is to learn and follow the Software
-                                    Development Life Cycle.
-                                </p>
-                                <ul class="flex flex-wrap gap-2 mt-2">
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">PHP</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">HTML</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">CSS</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">MySQL</li>
-                                </ul>
-                            </li>
-                            <hr class="opacity-30" data-inviewport="slide-up-nop" data-inviewport-delay="150">
-                            <li class="flex flex-col gap-2" data-inviewport="slide-up" data-inviewport-delay="150">
-                                <div class="flex flex-col md:flex-row justify-between gap-4">
-                                    <a href="https://github.com/SaiAbhinav/AmbleX-Software-Inc" target="_blank"
-                                        class="flex gap-2 external-link">
-                                        <p class="text-lg">Employee Information System</p>
-                                        <img src="./assets/icons/github-link.svg" alt="external-link" class="w-5">
-                                    </a>
-                                    <p class="text-sm">Jul 2017 - Nov 2017</p>
-                                </div>
-                                <p class="text-sm font-light">Amrita Vishwa Vidyapeetham</p>
-                                <p class="md:w-4/5 w-full text-sm leading-relaxed">
-                                    The website helps an employer to manage employees, departments, skills & salaries.
-                                    This project's main focus is to understand Database management and Normalization
-                                    concepts.
-                                </p>
-                                <ul class="flex flex-wrap gap-2 mt-2">
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">PHP</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">HTML</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">CSS</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">JavaScript
-                                    </li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">MySQL</li>
-                                </ul>
+                            <li class="flex gap-2">
+                                <span><i class="bi bi-caret-right text-brand"></i></span>
+                                <span>Developed a logging module that tracks different user patterns.</span>
                             </li>
                         </ul>
                     </div>
-                </li>
-                <!-- Other Projects -->
-                <li class="personal">
-                    <div class="flex flex-col gap-6">
-                        <h2 class="text-lg border-b border-brand w-fit">Other Projects</h2>
-                        <ul class="grid gap-6 w-full">
-                            <li class="flex flex-col gap-2" data-inviewport="slide-up" data-inviewport-delay="150">
-                                <div class="flex flex-col md:flex-row justify-between gap-4">
-                                    <a href="https://github.com/SaiAbhinav/Expense-Logger" target="_blank"
-                                        class="flex gap-2 external-link">
-                                        <p class="text-lg">Expense Logger</p>
-                                        <img src="./assets/icons/github-link.svg" alt="external-link" class="w-5">
-                                    </a>
-                                    <p class="text-sm">Jun 2020</p>
-                                </div>
-                                <ul class="flex flex-wrap gap-2 mt-2">
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Flutter</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Dart</li>
-                                </ul>
-                            </li>
-                            <hr class="opacity-30" data-inviewport="slide-up-nop" data-inviewport-delay="150">
-                            <li class="flex flex-col gap-2" data-inviewport="slide-up" data-inviewport-delay="150">
-                                <div class="flex flex-col md:flex-row justify-between gap-4">
-                                    <a href="https://github.com/SaiAbhinav/Flutter_Clone_AID" target="_blank"
-                                        class="flex gap-2 external-link">
-                                        <p class="text-lg">Amrita Info Desk Clone</p>
-                                        <img src="./assets/icons/github-link.svg" alt="external-link" class="w-5">
-                                    </a>
-                                    <p class="text-sm">Jun 2019</p>
-                                </div>
-                                <p class="text-sm md:w-4/5 w-full">
-                                    Clone of Amrita Info Desk App.
-                                </p>
-                                <ul class="flex flex-wrap gap-2 mt-2">
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Flutter</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Dart</li>
-                                </ul>
-                            </li>
-                            <hr class="opacity-30" data-inviewport="slide-up-nop" data-inviewport-delay="150">
-                            <li class="flex flex-col gap-2" data-inviewport="slide-up" data-inviewport-delay="150">
-                                <div class="flex flex-col md:flex-row justify-between gap-4">
-                                    <a href="https://github.com/SaiAbhinav/WhatsApp_Clone-DailyChat" target="_blank"
-                                        class="flex gap-2 external-link">
-                                        <p class="text-lg">Whats App Clone</p>
-                                        <img src="./assets/icons/github-link.svg" alt="external-link" class="w-5">
-                                    </a>
-                                    <p class="text-sm">May 2019</p>
-                                </div>
-                                <ul class="flex flex-wrap gap-2 mt-2">
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Flutter</li>
-                                    <li class="text-xs border border-brand rounded-md py-1 px-2 text-brand">Dart</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul
+                        class="flex items-center text-brand font-mono flex-wrap justify-start gap-1 mt-2 md:w-4/5 w-full">
+                        <li class="text-xs">Angular 10
+                        </li>
+                        <i class="bi bi-dot"></i>
+                        <li class="text-xs">HTML</li>
+                        <i class="bi bi-dot"></i>
+                        <li class="text-xs">SCSS</li>
+                        <i class="bi bi-dot"></i>
+                        <li class="text-xs">TypeScript
+                        </li>
+                        <i class="bi bi-dot"></i>
+                        <li class="text-xs">Mongo DB
+                        </li>
+                        <i class="bi bi-dot"></i>
+                        <li class="text-xs">Java</li>
+                    </ul>
                 </li>
             </ul>
+            <a href="./archive.html" target="_self" download class="mt-6 flex gap-2 items-center external-link"
+                data-inviewport-delay="750">
+                <h3 class="text-xl">Checkout the full list</h3>
+                <i class="bi bi-box-arrow-up-right text-xl text-brand"></i>
+            </a>
         </div>
     </section>
 
-    <!-- Publications -->
-    <section id="publications"
-        class="max-w-section md:mx-auto mx-2 p-7 mt-32 flex flex-col md:items-center justify-center">
-        <div class="flex flex-col gap-8 h-full md:w-3/4 w-full">
-            <h1 class="text-2xl border-b-4 border-brand w-fit pb-1" data-inviewport="slide-up">Publications
+    <!-- Skills -->
+    <section id="skills" class="max-w-section md:mx-auto p-8 flex flex-col min-h-screen items-center justify-center">
+        <div class="flex flex-col gap-8 h-full md:w-4/5 w-full">
+            <h1
+                class="text-2xl font-semibold text-brand w-full pb-1 tracking-widest after:bg-brand-dark-800 dark:after:bg-white">
+                Skills
             </h1>
-            <ul class="grid gap-8 w-full">
-                <li class="flex flex-col gap-2">
-                    <div data-inviewport="slide-up" data-inviewport-delay="150"
-                        class="flex flex-col md:flex-row justify-between gap-4">
-                        <a href="https://www.sciencepubco.com/index.php/ijet/article/view/25030" target="_blank"
-                            class="flex gap-2 external-link">
-                            <p class="text-lg">Access mechanism using InterPlanetary File System</p>
-                            <img src="./assets/icons/icons8-external-link.svg" alt="external-link" class="w-7">
-                        </a>
-                        <p class="text-sm">Mar 2019</p>
-                    </div>
-                    <p class="text-sm font-light" data-inviewport-delay="300" data-inviewport="slide-up">IJET, UAE (Vol
-                        7, No 4
-                        (2018), Article Id: 25030)</p>
-                    <p class="mt-2 text-sm leading-relaxed md:w-4/5 w-full" data-inviewport-delay="450"
-                        data-inviewport="slide-up">The provision of secure,
-                        dependable, seamless communications and services has become more critical with the introduction
-                        of the Internet of Things. IoT is essential to the operation of connected devices, which are the
-                        norm nowadays. However, the majority of these IoT devices communicate using centralized
-                        architectures and a variety of protocols. Message Queue Telemetry Transport (MQTT), a Pub-Sub
-                        (publisher and subscriber) protocol used for device-to-device communication on TCP through a
-                        broker, is one of these protocols. The possibility of a third-party service provider acting as
-                        this centralized server again raises the question of trust. This is addressed by our proposal to
-                        replace third-party service providers with a decentralized and distributed network architecture
-                        dubbed Inter Planetary File System (IPFS).</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Certifications -->
-    <section id="certifications"
-        class="max-w-section md:mx-auto mx-2 p-7 mt-32 flex flex-col md:items-center justify-center">
-        <div class="flex flex-col gap-8 h-full md:w-3/4 w-full">
-            <h1 class="text-2xl border-b-4 border-brand w-fit pb-1" data-inviewport="slide-up">Certifications
-            </h1>
-            <ul class="grid gap-8 w-full">
-                <li class="flex flex-col gap-2" data-inviewport="slide-up" data-inviewport-delay="150">
-                    <div class="flex flex-col md:flex-row justify-between gap-4">
-                        <a href="https://www.linkedin.com/learning/paths/become-a-python-developer-8969630?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BwMiOw3AfS6qYQSOzLDk8Dg%3D%3D"
-                            target="_blank" class="flex gap-2 external-link">
-                            <p class="text-lg">Become a Python Developer</p>
-                            <img src="./assets/icons/icons8-external-link.svg" alt="external-link" class="w-7">
-                        </a>
-                        <p class="text-sm">Sep 2022 &bull; No Expiration Date</p>
-                    </div>
-                    <p class="text-sm font-light">LinkedIn Learning</p>
-                </li>
-                <hr class="opacity-30" data-inviewport="slide-up-nop">
-                <li class="flex flex-col gap-2" data-inviewport="slide-up" data-inviewport-delay="300">
-                    <div class="flex flex-col md:flex-row justify-between gap-4">
-                        <a href="https://www.linkedin.com/learning/certificates/9007c0ecd9603c82363c8eb2ad6ca964cd34cf4cf9d8c765f6917fdc42782d67?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BwMiOw3AfS6qYQSOzLDk8Dg%3D%3D"
-                            target="_blank" class="flex gap-2 external-link">
-                            <p class="text-lg">Python Essential Training</p>
-                            <img src="./assets/icons/icons8-external-link.svg" alt="external-link" class="w-7">
-                        </a>
-                        <p class="text-sm">Sep 2022 &bull; No Expiration Date</p>
-                    </div>
-                    <p class="text-sm font-light">LinkedIn Learning</p>
-                </li>
-                <hr class="opacity-30" data-inviewport="slide-up-nop">
-                <li class="flex flex-col gap-2" data-inviewport="slide-up" data-inviewport-delay="450">
-                    <div class="flex flex-col md:flex-row justify-between gap-4">
-                        <p class="text-lg">Certified Ethical Hacker (CEH)</p>
-                        <p class="text-sm">Feb 2018 &bull; Expired Feb 2021</p>
-                    </div>
-                    <p class="text-sm font-light">EC Council</p>
-                    <p class="text-sm">Credential ID: ECC22011580636</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Achievements -->
-    <section id="achievements"
-        class="max-w-section md:mx-auto mx-2 p-7 mt-32 flex flex-col md:items-center justify-center">
-        <div class="flex flex-col gap-8 h-full md:w-3/4 w-full">
-            <h1 class="text-2xl border-b-4 border-brand w-fit pb-1" data-inviewport="slide-up">Awards & Achievements
-            </h1>
-            <ul class="grid gap-8 w-full">
-                <li class="flex flex-col gap-2" data-inviewport="slide-up">
-                    <div class="flex flex-col md:flex-row justify-between gap-4">
-                        <p class="text-lg">On the Spot Award</p>
-                        <p class="text-sm">Jun 2021</p>
-                    </div>
-                    <p class="text-sm font-light">Tata Consultancy Services</p>
-                    <p>For outstanding performance & contribution to the project and organisation.</p>
-                </li>
-                <hr class="opacity-30" data-inviewport="slide-up-nop">
-                <li class="flex flex-col gap-2" data-inviewport="slide-up">
-                    <div class="flex flex-col md:flex-row justify-between gap-4">
-                        <p class="text-lg">Best Team Award</p>
-                        <p class="text-sm">Feb 2020</p>
-                    </div>
-                    <p class="text-sm font-light">Tata Consultancy Services</p>
-                    <p>For delivering the project in the record time with best standards.</p>
-                </li>
-                <hr class="opacity-30" data-inviewport="slide-up-nop">
-                <li class="flex flex-col gap-2" data-inviewport="slide-up">
-                    <div class="flex flex-col md:flex-row justify-between gap-4">
-                        <p class="text-lg">Learning Achievements Award</p>
-                        <p class="text-sm">Jan 2020</p>
-                    </div>
-                    <p class="text-sm font-light">Tata Consultancy Services</p>
-                    <p>For continuous learning of new technologies and achieving milestones.</p>
-                </li>
-                <hr class="opacity-30" data-inviewport="slide-up-nop">
-                <li class="flex flex-col gap-2" data-inviewport="slide-up">
-                    <div class="flex flex-col md:flex-row justify-between gap-4">
-                        <p class="text-lg">On the Spot Award</p>
-                        <p class="text-sm">Nov 2019</p>
-                    </div>
-                    <p class="text-sm font-light">Tata Consultancy Services</p>
-                    <p>For outstanding performance & contribution to the project and organisation.</p>
-                </li>
-            </ul>
+            <div class="grid md:grid-cols-4 grid-cols-1 gap-x-16 gap-y-12 [&_li:before]:text-brand">
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-lg">Languages</h3>
+                    <ul class="grid gap-2 font-light">
+                        <li>JavaScript (ES6)</li>
+                        <li>TypeScript</li>
+                        <li>HTML</li>
+                        <li>CSS/Sass</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-lg">Frameworks</h3>
+                    <ul class="grid gap-2 font-light">
+                        <li>Angular</li>
+                        <li>Angular Material</li>
+                        <li>React</li>
+                        <li>Flutter (Beginner)</li>
+                        <li>Tailwind CSS</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-lg">Libraries</h3>
+                    <ul class="grid gap-2 font-light">
+                        <li>Moment JS</li>
+                        <li>Chart JS</li>
+                        <li>Fusion Charts</li>
+                        <li>Quill JS</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-lg">Technologies</h3>
+                    <ul class="grid gap-2 font-light">
+                        <li>NodeJS</li>
+                        <li>ExpressJS</li>
+                        <li>Ajax</li>
+                        <li>JSON</li>
+                        <li>REST</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-lg">Databases</h3>
+                    <ul class="grid gap-2 font-light">
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-lg">Methodologies</h3>
+                    <ul class="grid gap-2 font-light">
+                        <li>Bash</li>
+                        <li>Git, Github & Gitlab</li>
+                        <li>TDD</li>
+                        <li>Agile Development</li>
+                        <li>SDLC</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-lg">Soft Skills</h3>
+                    <ul class="grid gap-2 font-light">
+                        <li>Communication</li>
+                        <li>Team Work</li>
+                        <li>Problem Solving</li>
+                        <li>Flexibility</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 

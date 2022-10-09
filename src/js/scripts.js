@@ -12,11 +12,13 @@ function afterScroll() {
       ? "flex"
       : "none";
 
-  next.style.visibility =
-    document.body.scrollTop > 100 ||
-    document.documentElement.scrollTop > 100
-      ? "hidden"
-      : "visible";
+  if (next) {
+    next.style.visibility =
+      document.body.scrollTop > 100 ||
+      document.documentElement.scrollTop > 100
+        ? "hidden"
+        : "visible";
+  }
 }
 
 function nextSection() {
@@ -26,27 +28,6 @@ function nextSection() {
 function toTop() {
   window.scrollTo({ top: 0 });
 }
-
-const inViewport = (entries, observer) => {
-  entries.forEach((entry) => {
-    if (entry.target.dataset.inviewportDelay) {
-      setTimeout(() => {
-        entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
-      }, entry.target.dataset.inviewportDelay);
-    } else {
-      entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
-    }
-  });
-};
-
-const Obs = new IntersectionObserver(inViewport);
-const obsOptions = {};
-
-// Attach observer to every [data-inviewport] element:
-const ELs_inViewport = document.querySelectorAll("[data-inviewport]");
-ELs_inViewport.forEach((EL) => {
-  Obs.observe(EL, obsOptions);
-});
 
 window.addEventListener("load", afterScroll);
 window.addEventListener("scroll", afterScroll);
