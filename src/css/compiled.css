@@ -595,12 +595,12 @@ html {
   top: -12%;
 }
 
-.left-\[12\%\] {
-  left: 12%;
-}
-
 .right-\[12\%\] {
   right: 12%;
+}
+
+.left-\[12\%\] {
+  left: 12%;
 }
 
 .z-50 {
@@ -999,7 +999,7 @@ html {
 
 .text-brand {
   --tw-text-opacity: 1;
-  color: rgb(1 123 254 / var(--tw-text-opacity));
+  color: rgb(47 112 183 / var(--tw-text-opacity));
 }
 
 .opacity-10 {
@@ -1176,7 +1176,7 @@ html {
 
 .hover\:text-brand:hover {
   --tw-text-opacity: 1;
-  color: rgb(1 123 254 / var(--tw-text-opacity));
+  color: rgb(47 112 183 / var(--tw-text-opacity));
 }
 
 .dark .dark\:bg-brand-dark-800 {
@@ -1266,11 +1266,11 @@ html {
 
   .md\:hover\:border-brand:hover {
     --tw-border-opacity: 1;
-    border-color: rgb(1 123 254 / var(--tw-border-opacity));
+    border-color: rgb(47 112 183 / var(--tw-border-opacity));
   }
 }
 
 .\[\&_li\:before\]\:text-brand li:before {
   --tw-text-opacity: 1;
-  color: rgb(1 123 254 / var(--tw-text-opacity));
+  color: rgb(47 112 183 / var(--tw-text-opacity));
 }
