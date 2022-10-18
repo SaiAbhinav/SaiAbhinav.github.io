@@ -82,3 +82,19 @@ h1::after {
 .external-link:hover i {
   transform: translate(.25rem, -.25rem);
 }
+
+.border-link {
+  display: inline-block;
+}
+
+.border-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width .3s;
+}
+
+.border-link:hover::after {
+    width: 100%;
+}

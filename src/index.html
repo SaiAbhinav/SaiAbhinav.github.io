@@ -146,7 +146,7 @@
             </ul>
             <a href="./assets/docs/Resume.pdf" target="_blank" download
                 class="mt-6 flex gap-2 items-center external-link">
-                <h3 class="text-xl">View Resume</h3>
+                <h3 class="text-xl border-link after:bg-brand">View Resume</h3>
                 <i class="bi bi-box-arrow-up-right text-xl text-brand"></i>
             </a>
         </div>
@@ -161,7 +161,7 @@
             </h1>
             <ul class="flex flex-col gap-16">
                 <li class="relative flex flex-col gap-6 items-start">
-                    <span class="absolute text-10xl opacity-10 -top-[12%] right-[12%]">01</span>
+                    <span class="absolute text-8xl md:text-10xl opacity-10 md:-top-[12%] top-[9%] right-[-4%] md:right-[12%]">01</span>
                     <div class="flex flex-col gap-1 text-start">
                         <p class="font-light text-brand text-sm">Professional Project</p>
                         <p class="text-xl">US Retirement Platforms</p>
@@ -170,7 +170,7 @@
                             <p>May 2020 - Jun 2022</p>
                         </div>
                     </div>
-                    <div class="w-3/4 text-start shadow-lg p-6 bg-white dark:bg-brand-dark-600 rounded-lg">
+                    <div class="md:w-3/4 w-full text-start shadow-lg p-6 bg-white dark:bg-brand-dark-600 rounded-lg">
                         The project offers a number of platform applications that help to digitize the
                         process of creating and migrating various retirement plans.
                         <ul class="flex flex-col items-start gap-1 mt-4 font-light">
@@ -212,9 +212,9 @@
                         </li>
                     </ul>
                 </li>
-                <li class="relative flex flex-col gap-6 items-end">
-                    <span class="absolute text-10xl opacity-10 -top-[12%] left-[12%]">02</span>
-                    <div class="flex flex-col gap-1 text-end">
+                <li class="relative flex flex-col gap-6 items-start md:items-end">
+                    <span class="absolute text-8xl md:text-10xl opacity-10 md:-top-[12%] md:left-[12%] top-[12%] right-[-4%]">02</span>
+                    <div class="flex flex-col gap-1 text-start md:text-end">
                         <p class="font-light text-brand text-sm">Professional Project</p>
                         <p class="text-xl">Insurance Finance Advisor Portal</p>
                         <div class="font-light text-sm">
@@ -222,21 +222,23 @@
                             <p>Jun 2019 - Apr 2020</p>
                         </div>
                     </div>
-                    <div class="w-3/4 text-end shadow-lg p-6 bg-white dark:bg-brand-dark-600 rounded-lg">
+                    <div class="md:w-3/4 w-full md:text-end text-start shadow-lg p-6 bg-white dark:bg-brand-dark-600 rounded-lg">
                         The project allows IFAs to manage clients, their policies & projections.
                         <ul class="flex flex-col items-end gap-1 mt-4 font-light">
                             <li class="flex gap-2">
-                                <span>Developed a module that allows advisors to add new clients and create
+                                <span class="md:hidden flex"><i class="bi bi-caret-right text-brand"></i></span>
+                                <span class="md:flex hidden"><i class="bi bi-caret-left text-brand"></i></span>
+                                <span class="md:order-1">Developed a module that allows advisors to add new clients and create
                                     policies.</span>
-                                <span><i class="bi bi-caret-left text-brand"></i></span>
                             </li>
                             <li class="flex gap-2">
-                                <span>Developed a logging module that tracks different user patterns.</span>
-                                <span><i class="bi bi-caret-left text-brand"></i></span>
+                                <span class="md:hidden flex"><i class="bi bi-caret-right text-brand"></i></span>
+                                <span class="md:flex hidden"><i class="bi bi-caret-left text-brand"></i></span>
+                                <span class="md:order-1">Developed a logging module that tracks different user patterns.</span>
                             </li>
                         </ul>
                     </div>
-                    <ul class="flex items-center text-brand font-mono flex-wrap justify-end gap-1 mt-2 md:w-4/5 w-full">
+                    <ul class="flex items-center text-brand font-mono flex-wrap justify-start md:justify-end gap-1 mt-2 md:w-4/5 w-full">
                         <li class="text-xs">Angular 10
                         </li>
                         <i class="bi bi-dot"></i>
@@ -256,7 +258,7 @@
             </ul>
             <a href="./archive.html" target="_self"
                 class="mt-6 flex gap-2 items-center external-link">
-                <h3 class="text-xl">Checkout the full list</h3>
+                <h3 class="text-xl border-link after:bg-brand">Checkout the full list</h3>
                 <i class="bi bi-box-arrow-up-right text-xl text-brand"></i>
             </a>
         </div>
