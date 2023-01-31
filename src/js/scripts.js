@@ -4,6 +4,7 @@ const brand = document.querySelector(".mobile-menu-brand");
 const backToTop = document.querySelector("#back-to-top");
 const next = document.querySelector("#next");
 const nav = document.querySelector("nav");
+const viewMore = document.getElementById("view-more");
 
 function afterScroll() {
   backToTop.style.display =
@@ -36,4 +37,8 @@ const checkbox = document.getElementById('theme');
 
 checkbox.addEventListener('change', (e)=>{
   document.documentElement.classList.toggle('dark', e.target.checked);
+});
+
+viewMore.addEventListener('click', () => {
+  document.getElementById('archive').classList.toggle('show-less');
 });

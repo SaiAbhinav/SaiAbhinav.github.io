@@ -98,3 +98,12 @@ h1::after {
 .border-link:hover::after {
     width: 100%;
 }
+
+.show-less {
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.show-less .view-more {
+  display: flex;
+}
