@@ -5,8 +5,744 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Abhinav Reddy</title>
 
-    <meta http-equiv="refresh" content="0; url=https://saiabhinav.github.io/src/index.html">
+
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap Icons link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Custom CSS file links -->
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- Background SVG -->
+    <link rel="stylesheet" href="./css/bg.css">
+    <!-- Theme Related CSS -->
+    <link rel="stylesheet" href="./css/theme.css">
+    <!-- Portfolio Specific CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
+
+<!-- Scrollspy is used to keep track of the section that is visible in the viewport and highlight the appropriate navigation link -->
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" class="bg-body-tertiary">
+
+    <!-- Back to Top Button -->
+    <!-- Takes the user to the top of the page -->
+    <button type="button" onclick="toTop()" id="back-to-top"
+        class="btn fs-1 rounded-circle position-fixed bottom-0 end-0 mb-2 me-2 to-top-btn d-flex justify-content-center align-items-center z-3">
+        &#9757;
+    </button>
+
+    <div class="container-fluid p-0">
+        <!-- Header & Navbar -->
+        <header class="sticky-top w-100 z-3">
+            <nav class="navbar navbar-expand-lg px-3 portfolio-nav">
+                <div class="container p-0">
+                    <a class="navbar-brand fs-6 fw-semibold" href="#home">Sai&nbsp;<span
+                            class="text-brand">Abhinav</span>&nbsp;Reddy</a>
+                    <!-- Hambuger Menu button for mobile screens -->
+                    <button class="ms-auto btn btn-brand navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link py-2 active" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-2 active" href="#experience">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-2 active" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-2 active" href="#skills">Skills</a>
+                            </li>
+                        </ul>
+                        <!-- Theme toggle button -->
+                        <button class="btn ms-4 theme-toggler">
+                            <!-- Sun icon when in light mode -->
+                            <i class="bi bi-sun-fill light text-warning"></i>
+                            <!-- Moon icon when in dark mode -->
+                            <i class="bi bi-moon-stars-fill dark text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu"
+                aria-labelledby="offcanvasMenuLabel">
+                <div class="offcanvas-header">
+                    <h5 class="navbar-brand offcanvas-title" id="offcanvasMenuLabel">Sai&nbsp;<span
+                            class="text-brand">Abhinav</span>&nbsp;Reddy</h5>
+                    <!-- Theme toggle button -->
+                    <button class="btn ms-auto theme-toggler" data-bs-dismiss="offcanvas">
+                        <!-- Sun icon when in light mode -->
+                        <i class="bi bi-sun-fill light text-warning"></i>
+                        <!-- Moon icon when in dark mode -->
+                        <i class="bi bi-moon-stars-fill dark text-white"></i>
+                    </button>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="list-group list-group-flush text-center fs-4 mt-5">
+                        <li data-href="#about" class="list-group-item list-group-item-action">About</li>
+                        <li data-href="#experience" class="list-group-item list-group-item-action">Experience</li>
+                        <li data-href="#projects" class="list-group-item list-group-item-action">Projects</li>
+                        <li data-href="#skills" class="list-group-item list-group-item-action">Skills</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Home / Landing Section -->
+        <section id="home"
+            class="container d-flex flex-column justify-content-center align-items-center mx-auto text-center min-vh-100 position-relative">
+            <img src="./images/avatar.png" class="img-thumbnail rounded-circle avatar mb-4" alt="Avatar">
+            <h3>Hi there &#128075;, my name is</h3>
+            <h1>Sai <span class="text-brand">Abhinav</span> Reddy</h1>
+            <p class="mt-4 col-md-6 col-10">
+                I am a full-stack software engineer with a keen eye for design who is focused on creating appealing
+                user interfaces and engaging digital experiences. I also have a strong desire to learn about and try
+                out new technologies in a challenging environment.
+            </p>
+            <!-- Social media icons -->
+            <div class="d-flex align-items-center justify-content-center mt-8 network-links">
+                <a href="https://www.linkedin.com/in/saiabhinavreddy" target="_blank">
+                    <img src="./images/icons8-linkedin.svg" alt="Linkedin" class="">
+                </a>
+                <a href="https://github.com/saiabhinav" target="_blank">
+                    <img src="./images/icons8-github.svg" alt="github" class="">
+                </a>
+                <a href="mailto:saiabhinavvasepalli@gmail.com">
+                    <img src="./images/icons8-mail.svg" alt="Email" class="">
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about"
+            class="container d-flex mx-auto flex-column justify-content-center align-items-center my-10">
+            <div class="col-md-8 col-11 g-2 h-100">
+                <h2 class="text-brand w-100">About me</h2>
+                <div>
+                    <!-- Linked to the CS department information page -->
+                    <p class="mt-4">I'm currently persuing
+                        master's in
+                        <a href="./department.html" class="text-brand">Computer Science @
+                            George Mason University</a>, Fairfax VA.
+                    </p>
+                    <p class="mt-4">Previously, I worked as
+                        a full stack software engineer developing digital solutions for Banking, Financial Services, and
+                        Insurance sector (BFSI).</p>
+                    <p class="mt-4">As a software engineer, I
+                        take pleasure in developing interactive applications
+                        with my technical skills and acute sense of aesthetics to produce a stunning product. My
+                        objective
+                        is to always create applications that offer engaging, pixel-perfect user experiences while being
+                        scalable and efficient in the background.</p>
+                    <p class="mt-4">When I'm not in front of
+                        my system, I like to either travel & explore places or watch movies.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiences List Section -->
+        <section id="experience"
+            class="container d-flex mx-auto flex-column justify-content-center align-items-center my-10">
+            <div class="col-md-8 col-11 g-2 h-100">
+                <h2 class="text-brand w-100 mb-4">Where I've worked</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item p-0">
+                        <div class="row justify-content-between p-3 gy-2 fs-7">
+                            <div class="col p-0">
+                                <!-- Role -->
+                                <p class="p-0 mb-1 fs-6">Digital Systems Engineer</p>
+                                <!-- Company / Organisation -->
+                                <p class="p-0 m-0 fw-light">Tata Consultancy Services</p>
+                            </div>
+                            <div class="col-md-auto col-12 p-0 text-start">
+                                <!-- Timeline -->
+                                <p class="p-0 mb-1">Jun 2019 - Jul 2022</p>
+                                <!-- Location -->
+                                <p class="p-0 m-0 fw-light">Hyderabad, India</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item p-0">
+                        <div class="row justify-content-between p-3 gy-2 fs-7">
+                            <div class="col col-md p-0">
+                                <p class="p-0 mb-1 fs-6">Software Developer Intern</p>
+                                <p class="p-0 m-0 fw-light">Tata Consultancy Services</p>
+                            </div>
+                            <div class="col-md-auto col-12 p-0 text-start">
+                                <p class="p-0 mb-1">Jan 2019 - Apr 2019</p>
+                                <p class="p-0 m-0 fw-light">Hyderabad, India</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item p-0">
+                        <div class="row justify-content-between p-3 gy-2 fs-7">
+                            <div class="col p-0">
+                                <p class="p-0 mb-1 fs-6">Web Development Intern</p>
+                                <p class="p-0 m-0 fw-light">Urban Rider</p>
+                            </div>
+                            <div class="col-md-auto col-12 p-0 text-start">
+                                <p class="p-0 mb-1">Apr 2018 - Jun 2018</p>
+                                <p class="p-0 m-0 fw-light">Hyderabad, India (Remote)</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects List Sections -->
+        <section id="projects"
+            class="container d-flex mx-auto flex-column justify-content-center align-items-center my-10">
+            <div class="col-md-8 col-11 g-2 h-100">
+                <h2 class="text-brand w-100 mb-4">Projects I've worked on</h2>
+                <!-- Featured / Professional Projects -->
+                <!-- Most recent projects that I have worked on -->
+                <ul class="projects-list p-0">
+                    <li class="p-0 position-relative d-flex flex-column g-6 position-relative place-start project">
+                        <span class="position-absolute number">01</span>
+                        <div class="flex flex-col gy-1 project-title">
+                            <p class="fs-7 text-brand m-0">Professional Project</p>
+                            <p class="fs-5 mb-2">US Retirement Platforms</p>
+                            <div class="fw-light fs-7">
+                                <p class="m-0">Tata Consultancy Services</p>
+                                <p class="m-0">May 2020 - Jun 2022</p>
+                            </div>
+                        </div>
+                        <div class="col-md-10 mt-3 shadow p-3 rounded bg-body project-details">
+                            <p>
+                                The project offers a number of platform applications that help to digitize the
+                                process of creating and migrating various retirement plans.
+                            </p>
+                            <ul class="list-unstyled list-item-arrow ps-3">
+                                <li>
+                                    Developed a module to manage participant beneficiaries and their
+                                    allocations.
+                                </li>
+                                <li>
+                                    Developed a document center module which allows various stakeholders to organize &
+                                    share plan-related documents.
+                                </li>
+                            </ul>
+                            <ul
+                                class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 mt-2 col-12 skills-list px-3 mt-3">
+                                <li>Angular 11</li>
+                                <li>HTML</li>
+                                <li>SCSS</li>
+                                <li>TypeScript</li>
+                                <li>Java</li>
+                                <li>Docker</li>
+                                <li>Magnolia CMS</li>
+                                <li>Chart.js</li>
+                                <li>Fusion Charts</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="p-0 position-relative d-flex flex-column g-6 position-relative mt-5 place-end project">
+                        <span class="position-absolute number">02</span>
+                        <div class="flex flex-col gy-1 project-title">
+                            <p class="fs-7 text-brand m-0">Professional Project</p>
+                            <p class="fs-5 mb-2">Insurance Finance Advisor Portal</p>
+                            <div class="fw-light fs-7">
+                                <p class="m-0">Tata Consultancy Services</p>
+                                <p class="m-0">Jun 2019 - Apr 2020</p>
+                            </div>
+                        </div>
+                        <div class="col-md-10 mt-3 shadow p-3 rounded bg-body project-details">
+                            <p>
+                                The project allows IFAs to manage clients, their policies & projections.
+                            </p>
+                            <ul class="list-unstyled list-item-arrow ps-3">
+                                <li>
+                                    Developed a module that allows advisors to add new clients and create
+                                    policies.
+                                </li>
+                                <li>
+                                    Developed a logging module that tracks different user patterns.
+                                </li>
+                            </ul>
+                            <ul
+                                class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 mt-2 col-12 skills-list px-3 mt-3">
+                                <li>Angular 10</li>
+                                <li>HTML</li>
+                                <li>SCSS</li>
+                                <li>TypeScript</li>
+                                <li>Mongo DB</li>
+                                <li>Java</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Entire list of projects that I have worked on -->
+            <!-- Displays one row of projects with view more button which can be toggled to display the entire list -->
+            <div class="position-relative col-12 col-md-11 mx-auto">
+                <ul
+                    class="mt-4 row row-cols-md-3 row-cols-1 g-3 g-md-3 list-unstyled projects-archive mx-auto p-0">
+                    <li class="col-12 col-md-4 project">
+                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <i class="bi bi-mortarboard fs-3 text-brand"></i>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between h-100">
+                                <h5 class="fw-normal mb-3">Access Mechanism using IPFS</h5>
+                                <div class="d-flex flex-md-row flex-column justify-content-between">
+                                    <p class="fs-7 fw-light">Amrita Vishwa Vidyapeetham</p>
+                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
+                                                class="bi bi-calendar4-range text-brand"></i></span>Jun 2018 - Mar 2019
+                                    </p>
+                                </div>
+                                <p>The project uses a distributed and decentralized network architecture
+                                    called
+                                    InterPlanetary File System and Pretty Good Privacy (PGP) to transfer and secure
+                                    data, addressing a trust issue that arises when transferring data through a service
+                                    that relies on a broker.</p>
+                                <ul
+                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
+                                    <li>JAVA</li>
+                                    <li>Node.js</li>
+                                    <li>Shell Script</li>
+                                    <li>Raspberry Pi</li>
+                                    <li>IPFS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-4 project d-none d-md-flex">
+                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <i class="bi bi-mortarboard fs-3 text-brand"></i>
+                                <div>
+                                    <a href="https://github.com/SaiAbhinav/Mobi-Spec" class="text-body opacity-100"
+                                        target="_blank">
+                                        <i class="bi bi-github fs-5"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between h-100">
+                                <h5 class="fw-normal mb-3">Mobi-Spec</h5>
+                                <div class="d-flex flex-md-row flex-column justify-content-between">
+                                    <p class="fs-7 fw-light">Amrita Vishwa Vidyapeetham</p>
+                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
+                                                class="bi bi-calendar4-range text-brand"></i></span>Jun 2018 - Oct 2018
+                                    </p>
+                                </div>
+                                <p>The project shows the specifications of various smart phones.</p>
+                                <ul
+                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
+                                    <li>JAVA</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>XSLT</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-4 project d-none d-md-flex">
+                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <i class="bi bi-mortarboard fs-3 text-brand"></i>
+                                <div>
+                                    <a href="https://github.com/SaiAbhinav/Smart-Fan-and-Light"
+                                        class="text-body opacity-100" target="_blank">
+                                        <i class="bi bi-github fs-5"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between h-100">
+                                <h5 class="fw-normal mb-3">Smart Fan & Smart Ligh</h5>
+                                <div class="d-flex flex-md-row flex-column justify-content-between">
+                                    <p class="fs-7 fw-light">Amrita Vishwa Vidyapeetham</p>
+                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
+                                                class="bi bi-calendar4-range text-brand"></i></span>Jun 2018 - Oct 2018
+                                    </p>
+                                </div>
+                                <p>The project allows users to control fans and lights using an Android app and Google
+                                    voice assistant.</p>
+                                <ul
+                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
+                                    <li>JAVA (Android)</li>
+                                    <li>Audrino</li>
+                                    <li>IFTTT</li>
+                                    <li>Adafruit IO (Cloud service)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul
+                    class="row row-cols-md-3 row-cols-1 g-3 g-md-3 list-unstyled projects-archive collapse projects-collapsable mx-auto p-0">
+                    <li class="col-12 col-md-4 project d-md-none">
+                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <i class="bi bi-mortarboard fs-3 text-brand"></i>
+                                <div>
+                                    <a href="https://github.com/SaiAbhinav/Mobi-Spec" class="text-body opacity-100"
+                                        target="_blank">
+                                        <i class="bi bi-github fs-5"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between h-100">
+                                <h5 class="fw-normal mb-3">Mobi-Spec</h5>
+                                <div class="d-flex flex-md-row flex-column justify-content-between">
+                                    <p class="fs-7 fw-light">Amrita Vishwa Vidyapeetham</p>
+                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
+                                                class="bi bi-calendar4-range text-brand"></i></span>Jun 2018 - Oct 2018
+                                    </p>
+                                </div>
+                                <p>The project shows the specifications of various smart phones.</p>
+                                <ul
+                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
+                                    <li>JAVA</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>XSLT</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-4 project d-md-none">
+                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <i class="bi bi-mortarboard fs-3 text-brand"></i>
+                                <div>
+                                    <a href="https://github.com/SaiAbhinav/Smart-Fan-and-Light"
+                                        class="text-body opacity-100" target="_blank">
+                                        <i class="bi bi-github fs-5"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between h-100">
+                                <h5 class="fw-normal mb-3">Smart Fan & Smart Ligh</h5>
+                                <div class="d-flex flex-md-row flex-column justify-content-between">
+                                    <p class="fs-7 fw-light">Amrita Vishwa Vidyapeetham</p>
+                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
+                                                class="bi bi-calendar4-range text-brand"></i></span>Jun 2018 - Oct 2018
+                                    </p>
+                                </div>
+                                <p>The project allows users to control fans and lights using an Android app and Google
+                                    voice assistant.</p>
+                                <ul
+                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
+                                    <li>JAVA (Android)</li>
+                                    <li>Audrino</li>
+                                    <li>IFTTT</li>
+                                    <li>Adafruit IO (Cloud service)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-4 project">
+                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <i class="bi bi-mortarboard fs-3 text-brand"></i>
+                                <div>
+                                    <a href="https://github.com/SaiAbhinav/Appetite" class="text-body opacity-100"
+                                        target="_blank">
+                                        <i class="bi bi-github fs-5"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between h-100">
+                                <h5 class="fw-normal mb-3">Restaurant Ordering System</h5>
+                                <div class="d-flex flex-md-row flex-column justify-content-between">
+                                    <p class="fs-7 fw-light">Amrita Vishwa Vidyapeetham</p>
+                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
+                                                class="bi bi-calendar4-range text-brand"></i></span>Jan 2018 - Apr 2018
+                                    </p>
+                                </div>
+                                <p>The website allows customers to select items from a menu of various cuisines and
+                                    make payments. Main focus of this project is to learn and follow the Software
+                                    Development Life Cycle.</p>
+                                <ul
+                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
+                                    <li>PHP</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>MySQL</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-4 project">
+                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <i class="bi bi-mortarboard fs-3 text-brand"></i>
+                                <div>
+                                    <a href="https://github.com/SaiAbhinav/AmbleX-Software-Inc"
+                                        class="text-body opacity-100" target="_blank">
+                                        <i class="bi bi-github fs-5"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between h-100">
+                                <h5 class="fw-normal mb-3">Employee Information System</h5>
+                                <div class="d-flex flex-md-row flex-column justify-content-between">
+                                    <p class="fs-7 fw-light">Amrita Vishwa Vidyapeetham</p>
+                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
+                                                class="bi bi-calendar4-range text-brand"></i></span>Jul 2017 - Nov 2017
+                                    </p>
+                                </div>
+                                <p>The website helps an employer to manage employees, departments, skills & salaries.
+                                    This project's main focus is to understand Database management and Normalization
+                                    concepts.</p>
+                                <ul
+                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
+                                    <li>PHP</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>MySQL</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-4 project">
+                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <i class="bi bi-house fs-3 text-brand"></i>
+                                <div>
+                                    <a href="https://github.com/SaiAbhinav/Expense-Logger" class="text-body opacity-100"
+                                        target="_blank">
+                                        <i class="bi bi-github fs-5"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between h-100">
+                                <h5 class="fw-normal mb-3">Expense Logger</h5>
+                                <div class="d-flex flex-md-row flex-column justify-content-end">
+                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
+                                                class="bi bi-calendar4-range text-brand"></i></span>Jun 2020
+                                    </p>
+                                </div>
+                                <p>A cross platform app to manage expenses.</p>
+                                <ul
+                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
+                                    <li>Flutter</li>
+                                    <li>Dart</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-4 project">
+                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <i class="bi bi-house fs-3 text-brand"></i>
+                                <div>
+                                    <a href="https://github.com/SaiAbhinav/Flutter_Clone_AID"
+                                        class="text-body opacity-100" target="_blank">
+                                        <i class="bi bi-github fs-5"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between h-100">
+                                <h5 class="fw-normal mb-3">Amrita Info Desk Clone</h5>
+                                <div class="d-flex flex-md-row flex-column justify-content-end">
+                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
+                                                class="bi bi-calendar4-range text-brand"></i></span>Jun 2019
+                                    </p>
+                                </div>
+                                <p>Clone of Amrita Info Desk App.</p>
+                                <ul
+                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
+                                    <li>Flutter</li>
+                                    <li>Dart</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-4 project">
+                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <i class="bi bi-house fs-3 text-brand"></i>
+                                <div>
+                                    <a href="https://github.com/SaiAbhinav/WhatsApp_Clone-DailyChat"
+                                        class="text-body opacity-100" target="_blank">
+                                        <i class="bi bi-github fs-5"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between h-100">
+                                <h5 class="fw-normal mb-3">Whats App Clone</h5>
+                                <div class="d-flex flex-md-row flex-column justify-content-end">
+                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
+                                                class="bi bi-calendar4-range text-brand"></i></span>May 2019
+                                    </p>
+                                </div>
+                                <p>Clone of Whats App chatting app.</p>
+                                <ul
+                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
+                                    <li>Flutter</li>
+                                    <li>Dart</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- View more / View less toggle button -->
+                <div class="collaspe-btn-container rounded">
+                    <div class="w-100 d-flex justify-content-center align-items-end pb-6">
+                        <button type="button" data-bs-toggle="collapse" data-bs-target=".projects-collapsable"
+                            aria-expanded="false" aria-controls="projects-collapsable" id="toggle-more"
+                            class="btn btn-outline-brand btn-sm mt-4">
+                            <span>View more</span>&nbsp;<i class="bi bi-caret-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills List Section -->
+        <section id="skills"
+            class="container d-flex mx-auto flex-column justify-content-center align-items-center my-10">
+            <div class="col-md-8 col-11 g-2 h-100">
+                <h2 class="text-brand w-100 mb-4">Skills</h2>
+                <!-- Different Categories of Skills -->
+                <div class="row row-cols-md-4 row-cols-1 g-3">
+                    <div class="col">
+                        <h5>Languages</h5>
+                        <ul class="fw-light list-unstyled list-item-arrow ps-3">
+                            <li>JavaScript (ES6)</li>
+                            <li>TypeScript</li>
+                            <li>HTML</li>
+                            <li>CSS/Sass</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h5>Frameworks</h5>
+                        <ul class="fw-light list-unstyled list-item-arrow ps-3">
+                            <li>Angular</li>
+                            <li>Angular Material</li>
+                            <li>React</li>
+                            <li>Flutter (Beginner)</li>
+                            <li>Tailwind CSS</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h5>Libraries</h5>
+                        <ul class="fw-light list-unstyled list-item-arrow ps-3">
+                            <li>Moment JS</li>
+                            <li>Chart JS</li>
+                            <li>Fusion Charts</li>
+                            <li>Quill JS</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h5>Technologies</h5>
+                        <ul class="fw-light list-unstyled list-item-arrow ps-3">
+                            <li>NodeJS</li>
+                            <li>ExpressJS</li>
+                            <li>Ajax</li>
+                            <li>JSON</li>
+                            <li>REST</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h5>Databases</h5>
+                        <ul class="fw-light list-unstyled list-item-arrow ps-3">
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h5>Methodologies</h5>
+                        <ul class="fw-light list-unstyled list-item-arrow ps-3">
+                            <li>Git, Github & Gitlab</li>
+                            <li>TDD</li>
+                            <li>Agile Development</li>
+                            <li>SDLC</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h5>Soft Skills</h5>
+                        <ul class="fw-light list-unstyled list-item-arrow ps-3">
+                            <li>Communication</li>
+                            <li>Team Work</li>
+                            <li>Problem Solving</li>
+                            <li>Flexibility</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="container py-4 mb-3 mx-auto row d-flex align-items-center">
+            <div class="col-auto order-md-1 order-2">
+                <p class="mb-1">Designed & Developed by</p>
+                <p class="m-0">Sai Abhinav Reddy 🖖 2023</p>
+            </div>
+
+            <!-- Social media links -->
+            <!-- Displays text on screens larger than 768px and display icons on smaller screens -->
+            <ul class="text-brand list-unstyled col d-flex footer-links order-md-2 order-1">
+                <!-- Email -->
+                <li>
+                    <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank"
+                        class="text-brand text-decoration-none d-none d-md-flex">EMAIL</a>
+                    <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank" class="d-md-none">
+                        <img src="./images/icons8-mail.svg" alt="Email">
+                    </a>
+                </li>
+                <!-- Twitter -->
+                <li>
+                    <a href="https://www.twitter.com/SaiAbhinav16" target="_blank"
+                        class="text-brand text-decoration-none d-none d-md-flex">TWITTER</a>
+                    <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank" class="d-md-none">
+                        <img src="./images/icons8-twitter.svg" alt="Twitter">
+                    </a>
+                </li>
+                <!-- Instagram -->
+                <li>
+                    <a href="https://www.instagram.com/sai_abhinav" target="_blank"
+                        class="text-brand text-decoration-none d-none d-md-flex">INSTAGRAM</a>
+                    <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank" class="d-md-none">
+                        <img src="./images/icons8-instagram.svg" alt="instagram"
+                            style="width: 2rem; position: relative; top: 4px;">
+                    </a>
+                </li>
+                <!-- Github -->
+                <li>
+                    <a href="https://github.com/saiabhinav" target="_blank"
+                        class="text-brand text-decoration-none d-none d-md-flex">GITHUB</a>
+                    <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank" class="d-md-none">
+                        <img src="./images/icons8-github.svg" alt="github">
+                    </a>
+                </li>
+                <!-- LinkedIn -->
+                <li>
+                    <a href="https://www.linkedin.com/in/saiabhinavreddy" target="_blank"
+                        class="text-brand text-decoration-none d-none d-md-flex">LINKEDIN</a>
+                    <a href="mailto:saiabhinavvasepalli@gmail.com" target="_blank" class="d-md-none">
+                        <img src="./images/icons8-linkedin.svg" alt="linkedin">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- Custom Scripts -->
+    <script src="./js/scripts.js" defer></script>
+    <!-- Bootstrap javascript link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
