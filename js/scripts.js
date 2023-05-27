@@ -73,21 +73,21 @@ function afterLoad() {
 }
 
 /**
- * Removing the offcanvas menu on li click
+ * Removing the offcanvas menu in portfolio mobile screen on li click
  */
 if (offcanvasMenu) {
   Array.from(offcanvasMenu.querySelectorAll('li')).forEach(li => {
     li.addEventListener('click', (event) => {
-      // Creating an anchor tag, assigning href and executing click event on it
-      const a = document.createElement('a');
-      a.href = event.target.dataset.href;
-      a.click();
-      // Hiding the offcanvas menu and removing the backdrop
-      const bsOffcanvas = new bootstrap.Offcanvas('#offcanvasMenu');
-      offcanvasMenu.classList.remove('show');
-      offcanvasMenu.parentElement.querySelector('.offcanvas-backdrop').remove();
-      bsOffcanvas.hide();
-      document.body.style.removeProperty('overflow');
+       // Creating an anchor tag, assigning href and executing click event on it
+       const a = document.createElement('a');
+       a.href = event.target.dataset.href;
+       a.click();
+       // Hiding the offcanvas menu and removing the backdrop
+       const bsOffcanvas = new bootstrap.Offcanvas('#offcanvasMenu');
+       offcanvasMenu.classList.remove('show');
+       offcanvasMenu.parentElement.querySelector('.offcanvas-backdrop').remove();
+       bsOffcanvas.hide();
+       document.body.style.removeProperty('overflow');
     }, false)
   });
 }

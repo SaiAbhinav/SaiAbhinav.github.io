@@ -36,24 +36,29 @@
   color: var(--p-c-brand);
 }
 
-.fs-7 {
-  font-size: 14px;
-}
-.fs-8 {
-  font-size: 12px;
-}
-
 .my-10 {
   margin-block: 10rem;
 }
 
 #navbar .nav-link {
   border-bottom: 5px solid transparent;
+  margin-top: 0.25rem;
 }
 
 #navbar .nav-link.active {
-  border-bottom: 5px solid var(--p-c-brand);
-  border-radius: 5px;
+  position: relative;
+}
+
+#navbar .nav-link.active::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 5px;
+  background: var(--p-c-brand);
+  bottom: calc(-5px - 0.25rem);
+  left: 0;
+  border-radius: 5px 5px 0 0;
 }
 
 nav .navbar-nav .nav-item:not(:last-of-type) {
@@ -143,6 +148,24 @@ ul.footer-links a > img {
 }
 footer {
   justify-content: center;
+}
+
+.vertical-divider {
+  width: 1px;
+  height: 1.25rem;
+  background-color: var(--bs-border-color);
+  margin-inline: 1rem;
+}
+
+.portfolio-nav .dropdown-menu {
+  --bs-dropdown-padding-x: .25rem;
+  --bs-dropdown-padding-y: 0.25rem;
+  --bs-dropdown-min-width: 5rem;
+  --bs-dropdown-spacer: 0.5rem;
+  --bs-dropdown-link-hover-color: white;
+  --bs-dropdown-link-active-color: white;
+  --bs-dropdown-link-hover-bg: var(--p-c-brand);
+  --bs-dropdown-link-active-bg: var(--p-c-brand);
 }
 
 @media only screen and (min-width: 768px) {
