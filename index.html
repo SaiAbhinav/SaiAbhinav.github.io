@@ -135,7 +135,7 @@
                     <!-- Linked to the CS department information page -->
                     <p class="mt-4">I'm currently persuing
                         master's in Computer Science @
-                            George Mason University, Fairfax VA.
+                        George Mason University, Fairfax VA.
                     </p>
                     <p class="mt-4">Previously, I worked as
                         a full stack software engineer developing digital solutions for Banking, Financial Services, and
@@ -611,76 +611,233 @@
             <div class="col-md-8 col-11 g-2 h-100">
                 <h2 class="text-brand w-100 mb-4">Skills</h2>
                 <!-- Different Categories of Skills -->
+                <div id="skills-list"></div>
                 <div class="row row-cols-md-4 row-cols-1 g-3">
-                    <div class="col">
-                        <h5>Languages</h5>
-                        <ul class="fw-light list-unstyled list-item-arrow ps-3">
-                            <li>JavaScript (ES6)</li>
-                            <li>TypeScript</li>
-                            <li>HTML</li>
-                            <li>CSS/Sass</li>
-                            <li>Java</li>
-                            <li>Python</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h5>Frameworks</h5>
-                        <ul class="fw-light list-unstyled list-item-arrow ps-3">
-                            <li>Angular</li>
-                            <li>Angular Material</li>
-                            <li>React</li>
-                            <li>Flutter (Beginner)</li>
-                            <li>Tailwind CSS</li>
-                            <li>Bootstrap</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h5>Libraries</h5>
-                        <ul class="fw-light list-unstyled list-item-arrow ps-3">
-                            <li>Moment JS</li>
-                            <li>Chart JS</li>
-                            <li>Fusion Charts</li>
-                            <li>Quill JS</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h5>Technologies</h5>
-                        <ul class="fw-light list-unstyled list-item-arrow ps-3">
-                            <li>NodeJS</li>
-                            <li>ExpressJS</li>
-                            <li>Ajax</li>
-                            <li>JSON</li>
-                            <li>REST</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h5>Databases</h5>
-                        <ul class="fw-light list-unstyled list-item-arrow ps-3">
-                            <li>MySQL</li>
-                            <li>MongoDB</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h5>Methodologies</h5>
-                        <ul class="fw-light list-unstyled list-item-arrow ps-3">
-                            <li>Git, Github & Gitlab</li>
-                            <li>TDD</li>
-                            <li>Agile Development</li>
-                            <li>SDLC</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h5>Soft Skills</h5>
-                        <ul class="fw-light list-unstyled list-item-arrow ps-3">
-                            <li>Communication</li>
-                            <li>Team Work</li>
-                            <li>Problem Solving</li>
-                            <li>Flexibility</li>
-                        </ul>
+                    <div class="col w-100">
+                        <h5 class="my-4">Soft Skills</h5>
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div class="skill-text">Communication</div>
+                            <div class="skill-text">Team Work</div>
+                            <div class="skill-text">Problem Solving</div>
+                            <div class="skill-text">Flexibility</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <script type="text/javascript">
+            const skills = [
+                {
+                    title: "Programming Languages",
+                    skills: [
+                        {
+                            name: "JavaScript (ES6)",
+                            icon: "./images/skills/javascript.svg"
+                        },
+                        {
+                            name: "TypeScript",
+                            icon: "./images/skills/typescript.svg"
+                        },
+                        {
+                            name: "PHP 7",
+                            icon: "./images/skills/php.svg"
+                        },
+                        {
+                            name: "HTML",
+                            icon: "./images/skills/html5.svg"
+                        },
+                        {
+                            name: "CSS",
+                            icon: "./images/skills/css3.svg"
+                        },
+                        {
+                            name: "Sass",
+                            icon: "./images/skills/sass.svg"
+                        },
+                        {
+                            name: "Java",
+                            icon: "./images/skills/java.svg"
+                        },
+                        {
+                            name: "Python",
+                            icon: "./images/skills/python.svg"
+                        }
+                    ]
+                },
+                {
+                    title: "Front-end Frameworks / Libraries",
+                    skills: [
+                        {
+                            name: "Angular",
+                            icon: "./images/skills/angular.svg"
+                        },
+                        {
+                            name: "Angular Material",
+                            icon: "./images/skills/materialui.svg"
+                        },
+                        {
+                            name: "React",
+                            icon: "./images/skills/react.svg"
+                        },
+                        {
+                            name: "Flutter",
+                            icon: "./images/skills/flutter.svg"
+                        }
+                    ]
+                },
+                {
+                    title: "CSS Frameworks / Libraries",
+                    skills: [
+                        {
+                            name: "Tailwind CSS",
+                            icon: "./images/skills/tailwindcss.svg"
+                        },
+                        {
+                            name: "Bootstrap",
+                            icon: "./images/skills/bootstrap.svg"
+                        }
+                    ]
+                },
+                {
+                    title: "JavaScript Libraries",
+                    skills: [
+                        {
+                            name: "Moment.js",
+                            icon: "./images/skills/momentjs.svg"
+                        },
+                        {
+                            name: "Chart.js",
+                            icon: "./images/skills/chartjs.svg"
+                        },
+                        {
+                            name: "FusionCharts",
+                            icon: "./images/skills/fusioncharts.jpg"
+                        },
+                        {
+                            name: "Quill.js",
+                            text: true
+                        }
+                    ]
+                },
+                {
+                    title: "Back-end Technologies",
+                    skills: [
+                        {
+                            name: "Node.js",
+                            icon: "./images/skills/nodejs.svg"
+                        },
+                        {
+                            name: "Express",
+                            text: true
+                        },
+                        {
+                            name: "jQuery",
+                            icon: "./images/skills/jquery.png"
+                        },
+                        {
+                            name: "Ajax",
+                            text: true
+                        },
+                        {
+                            name: "JSON",
+                            text: true
+                        },
+                        {
+                            name: "REST",
+                            text: true
+                        }
+                    ]
+                },
+                {
+                    title: "Database Technologies",
+                    skills: [
+                        {
+                            name: "MySQL",
+                            icon: "./images/skills/mysql.svg"
+                        },
+                        {
+                            name: "MongoDB",
+                            icon: "./images/skills/mongodb.svg"
+                        }
+                    ]
+                },
+                {
+                    title: "Version Control",
+                    skills: [
+                        {
+                            name: "Git bash",
+                            icon: "./images/skills/gitbash.svg"
+                        },
+                        {
+                            name: "Github",
+                            icon: "./images/skills/github.png"
+                        },
+                        {
+                            name: "Gitlab",
+                            icon: "./images/skills/gitlab.svg"
+                        }
+                    ]
+                },
+                {
+                    title: "Software Development Methodologies",
+                    skills: [
+                        {
+                            name: "Agile",
+                            text: true
+                        },
+                        {
+                            name: "SDLC",
+                            text: true
+                        },
+                        {
+                            name: "TDD",
+                            text: true
+                        }
+                    ]
+                }
+            ];
+
+            const skillsCont = document.getElementById("skills-list");
+
+            skills.forEach(skillset => {
+                const cont = document.createElement('div');
+                cont.classList.add('col');
+
+                const heading = document.createElement('h5');
+                const headingText = document.createTextNode(skillset.title);
+                heading.appendChild(headingText);
+                cont.appendChild(heading);
+
+                const row = document.createElement('div');
+                row.classList.add('row', 'skills-catg');
+
+                skillset.skills.forEach(skill => {
+                    const el = document.createElement('div');
+                    el.classList.add('skill');
+
+                    if (skill.text) {
+                        const text = document.createTextNode(skill.name);
+
+                        el.appendChild(text);
+                    } else {
+                        const img = document.createElement('img');
+                        img.src = skill.icon;
+                        img.alt = skill.name;
+                        el.setAttribute("title", skill.name);
+
+                        el.appendChild(img);
+                    }
+
+                    row.appendChild(el);
+
+                    cont.appendChild(row);
+                });
+
+
+                skillsCont.appendChild(cont);
+            });
+        </script>
 
         <!-- Footer -->
         <footer class="container py-4 mb-3 mx-auto row d-flex align-items-center">
