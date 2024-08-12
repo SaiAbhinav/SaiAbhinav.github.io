@@ -1,0 +1,392 @@
+{
+    "experiences": [
+        {
+            "role": "Graduate Teaching Assistant",
+            "company": "George Mason University",
+            "startDate": "Aug 2023",
+            "endDate": "May 2024",
+            "summary": "Coordinated comprehensive lab exercises for over 100 students, providing individual feedback to enhance understanding of Object-Oriented Programming concepts.",
+            "responsibilities": [
+                "Coordinated comprehensive lab exercises for over 100 students, providing individual feedback to enhance understanding of Object-Oriented Programming concepts.",
+                "Improved application performance through best practices in code development and review.",
+                "Provided additional student support through office hours and online forums, ensuring all students had the necessary resources to succeed.",
+                "Developed and graded assignments and exams to effectively evaluate student performance.",
+                "Assisted in curriculum development and improvement based on feedback and observed student needs.",
+                "Facilitated group discussions and projects to promote collaborative learning and critical thinking.",
+                "Organized and led review sessions before exams to help students better prepare and clarify doubts."
+            ],
+            "technologies": ["Python", "Turtle", "Tkinter", "PyQt"]
+        },
+        {
+            "role": "Full Stack Developer",
+            "company": "Tata Consultancy Services",
+            "startDate": "Jun 2019",
+            "endDate": "Jul 2022",
+            "summary": "Suite of applications to fully digitalize the 401k process from end to end. It includes individual applications tailored for stakeholders including advisors, customers, and relationship managers, enabling seamless collaboration through a common portal.",
+            "responsibilities": [
+                "Involved in SDLC Requirements gathering, Analysis, Design, Development, and Testing of applications developed using Agile methodology.",
+                "Experience developing highly interactive web applications utilizing JavaScript, HTML5, CSS, JSON, Angular, and Bootstrap and integrating Restful API's.",
+                "Designed and created Microservices business segments and RESTful administration endpoints using JAX-RS and Spring Boot.",
+                "Collaborated in creating a Java-based logging framework capturing 10+ distinct user interactions and behavior patterns.",
+                "Developed a web application enabling back-office members to perform efficient searches on 1000s of client records and manage details.",
+                "Developed secure messaging and document-sharing systems backed by Java, focusing on scalability and efficient object creation.",
+                "Spearheaded the development of a suite of web-based retirement applications and utilized RxJS and Angular to create complex dashboards with over 10 distinct data visualizations using Fusion Charts and Chart.js.",
+                "Developed secure messaging and document-sharing systems with Java, focusing on scalability and efficient object creation.",
+                "Built web components and REST APIs for retirement plan functions with 90% code coverage using Jasmine and JUnit testing, and deployed to HTTP and JBoss servers using Docker.",
+                "Enhanced application performance through Angular Component-based development in preparation for future Angular framework transitions.",
+                "Worked with Spring modules and Spring Data for implementation of the persistence layer and mapping of POJOs.",
+                "Authored complex directives, services, and filters within the Angular framework.",
+                "Used MySQL and MongoDB extensively for database needs in applications.",
+                "Received 'On-the-Spot' awards in November 2019 and June 2021 for exceptional performance, and the 'Best Team' award in February 2020 for delivering high-quality results."
+            ],
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "Bootstrap",
+                "jQuery",
+                "SASS",
+                "Angular",
+                "Webpack",
+                "Node.js",
+                "Chart.js",
+                "Fusion Charts",
+                "Moment.js",
+                "AJAX",
+                "JSON",
+                "RESTful",
+                "JILE",
+                "Java/J2EE",
+                "Spring boot",
+                "MySQL",
+                "MongoDB",
+                "GIT",
+                "Gitlab",
+                "Bitbucket",
+                "Docker",
+                "Docker-compose",
+                "Magnolia CMS",
+                "Design Patterns"
+            ]
+        },
+        {
+            "role": "Software Developer Intern",
+            "company": "Tata Consultancy Services",
+            "startDate": "Jan 2019",
+            "endDate": "Apr 2019",
+            "summary": "An Insurance Financial Advisor portal to assist insurance providers in managing customers and their policies. The application offers detailed views of policies and projections and a platform for securely communicating with the policyholders.",
+            "responsibilities": [
+                "Involved in SDLC Requirements gathering, Analysis, Design, Development, and Testing of applications developed using Agile methodology.",
+                "Experience developing highly interactive web applications utilizing JavaScript, HTML5, CSS, JSON, Angular, and Bootstrap and integrating Restful API's.",
+                "Designed and developed multiple modules in Java and Spring Framework, exposing RESTful web services using JAX-RS.",
+                "Utilized various JS libraries and frameworks such as Chart.js for data visualizations and moment.js for date manipulations.",
+                "Implemented 5 core components aiding advisors in managing clients and policies within the insurance web application, using Angular, Angular Material, and Java Web Services.",
+                "Worked extensively with Angular CLI for components, services, pipes, and directives creation.",
+                "Developed multiple screens with routing and enabling the advisor to have both an overview and detailed view of the policies.",
+                "Worked on streamlining the process of validating and submitting order projections using RESTful services.",
+                "Enhanced legacy applications by developing new components in Angular and Typescript.",
+                "Utilized SQL extensively for database requirements in various parts of the application.",
+                "Integrated web services, optimizations, and security measures for the web application.",
+                "Assisted in troubleshooting and resolving application issues during the development and testing phases."
+            ],
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "Bootstrap",
+                "jQuery",
+                "SASS",
+                "Angular",
+                "Node.js",
+                "Chart.js",
+                "Moment.js",
+                "AJAX",
+                "JSON",
+                "RESTful",
+                "JILE",
+                "Java/J2EE",
+                "Spring boot",
+                "MySQL",
+                "MongoDB",
+                "GIT",
+                "Gitlab"
+            ]
+        },
+        {
+            "role": "Web Developer Intern",
+            "company": "Urban Rider",
+            "startDate": "May 2018",
+            "endDate": "Jun 2018",
+            "summary": "Developed an admin web application to manage user privileges and maintain a directory of service providers, including mechanics, locksmiths, towing services, spare parts suppliers, and tire and battery providers, among others, allowing efficient management with just a few clicks.",
+            "responsibilities": [
+                "Designed an admin web portal using AJAX, jQuery, and PHP to efficiently manage admin access privileges for hundreds of client application users.",
+                "Created an analytical dashboard displaying visualizations for various user statistics, including searches, user activity, and sales.",
+                "Collaborated with stakeholders to gather requirements, provide progress updates, and incorporate feedback into the development process.",
+                "Utilized SQL extensively for database requirements to manage the inventory and user privileges."
+            ],
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "PHP",
+                "Bootstrap",
+                "jQuery",
+                "AJAX",
+                "JSON",
+                "MySQL",
+                "GIT"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Line-by-Line Code Analysis and Profiler Extension",
+            "summary": "Visual Studio Code extension to provide real-time performance metrics, enhancing code optimization and developer productivity.",
+            "responsibilities": [
+                "Engineered a Visual Studio Code extension, leveraging TypeScript and Python to display real-time performance metrics during code execution.",
+                "Enhanced developer productivity by approximately 30% by providing immediate feedback on code performance.",
+                "Implemented features to highlight inefficient code sections, helping developers optimize their code effectively.",
+                "Integrated a user-friendly interface to visualize performance metrics and bottlenecks.",
+                "Conducted extensive testing and debugging to ensure the extension's reliability and accuracy."
+            ],
+            "technologies": ["Python", "Typescript", "Scalene"]
+        },
+        {
+            "title": "Student Feedback Survey System",
+            "summary": "Full stack application to collect and analyze student feedback, ensuring efficient data handling and secure deployment.",
+            "responsibilities": [
+                "Designed a full-stack application to gather feedback using Java Spring Boot microservices and JPA.",
+                "Orchestrated containers using Kubernetes, Rancher, and Docker, and deployed to Amazon EC2 and S3 utilizing Jenkins to automate the CI/CD pipelines.",
+                "Developed a user-friendly interface to streamline feedback collection and analysis."
+            ],
+            "technologies": [
+                "Angular",
+                "JavaScript",
+                "Java",
+                "Spring Boot",
+                "Docker",
+                "Kubernetes",
+                "Rancher",
+                "AWS",
+                "S3",
+                "EC2"
+            ]
+        },
+        {
+            "title": "Frequent Flier Program",
+            "summary": "Developed a comprehensive frequent flier program for passengers to earn and redeem miles, integrating web and mobile applications.",
+            "responsibilities": [
+                "Proposed and developed a frequent flier program enabling hundreds of passengers to earn and redeem travel miles as part of a database management project.",
+                "Created ER diagrams and developed the schema for efficient data management.",
+                "Engineered a comprehensive solution using Java Servlet APIs, a Java frame-based application, and an Android app to provide a seamless user experience.",
+                "Integrated real-time data synchronization between the web and mobile applications.",
+                "Implemented a rewards calculation algorithm to accurately track and manage passenger miles."
+            ],
+            "technologies": ["SQL", "MySQL", "Java", "Java Servlets", "Android"]
+        },
+        {
+            "title": "Access Mechanism using IPFS",
+            "summary": "Created an application to communicate remotely between Java application and a turbo motor using unix bash/shell scripting as a proof of concept using InterPlanetary File System (IPFS).",
+            "responsibilities": [
+                "Developed a Java interface to run the IPFS daemon service, facilitating user interactions to control the turbo motor.",
+                "Authored a lightweight Node.js server on a Raspberry Pi to listen to Java services.",
+                "Integrated functionality with the turbo motor using shell scripts for seamless operation.",
+                "Utilized the InterPlanetary File System to securely communicate with the Java application."
+            ],
+            "technologies": ["Node.js", "Java", "BashScripting", "RaspberryPi"]
+        },
+        {
+            "title": "Employee Management System",
+            "summary": "Created a PHP web application for efficient employee management, including access control, reporting, and data security.",
+            "responsibilities": [
+                "Developed a role-based PHP web application with privileged access for admin and manager roles to manage hundreds of employees, departments, skills, and salaries.",
+                "Applied advanced DBMS techniques, including designing normalized relational schemas and developing efficient SQL queries.",
+                "Implemented robust access control mechanisms to ensure data security and integrity.",
+                "Developed comprehensive reporting features to provide insights into employee performance and department metrics."
+            ],
+            "technologies": []
+        },
+        {
+            "title": "Mobile Specifications Reviewing System",
+            "summary": "Developed a web application displaying a list of mobile phones and their specifications, including advanced filtering options using Java Servlets, JSP, HTML, and CSS.",
+            "technologies": []
+        },
+        {
+            "title": "Restaurant Management System",
+            "summary": "Developed a restaurant management system enabling users to browse various cuisines using filters, add dishes to the cart, and make payments, leveraging MySQL for data storage.",
+            "technologies": []
+        }
+    ],
+    "skills": [
+        {
+            "title": "Programming Languages",
+            "skills": [
+                {
+                    "name": "JavaScript (ES6)",
+                    "icon": "javascript.svg"
+                },
+                {
+                    "name": "TypeScript",
+                    "icon": "typescript.svg"
+                },
+                {
+                    "name": "PHP 7",
+                    "icon": "php.svg"
+                },
+                {
+                    "name": "HTML",
+                    "icon": "html5.svg"
+                },
+                {
+                    "name": "CSS",
+                    "icon": "css3.svg"
+                },
+                {
+                    "name": "Sass",
+                    "icon": "sass.svg"
+                },
+                {
+                    "name": "Java",
+                    "icon": "java.svg"
+                },
+                {
+                    "name": "Python",
+                    "icon": "python.svg"
+                }
+            ]
+        },
+        {
+            "title": "Front-end Frameworks / Libraries",
+            "skills": [
+                {
+                    "name": "Angular",
+                    "icon": "angular.svg"
+                },
+                {
+                    "name": "Angular Material",
+                    "icon": "materialui.svg"
+                },
+                {
+                    "name": "React",
+                    "icon": "react.svg"
+                },
+                {
+                    "name": "Flutter",
+                    "icon": "flutter.svg"
+                }
+            ]
+        },
+        {
+            "title": "CSS Frameworks / Libraries",
+            "skills": [
+                {
+                    "name": "Tailwind CSS",
+                    "icon": "tailwindcss.svg"
+                },
+                {
+                    "name": "Bootstrap",
+                    "icon": "bootstrap.svg"
+                }
+            ]
+        },
+        {
+            "title": "JavaScript Libraries",
+            "skills": [
+                {
+                    "name": "Moment.js",
+                    "icon": "momentjs.svg"
+                },
+                {
+                    "name": "Chart.js",
+                    "icon": "chartjs.svg"
+                },
+                {
+                    "name": "Fusion Charts",
+                    "icon": "fusioncharts.jpg"
+                },
+                {
+                    "name": "Quill.js",
+                    "icon": "quilljs.svg"
+                }
+            ]
+        },
+        {
+            "title": "Back-end Technologies",
+            "skills": [
+                {
+                    "name": "Node.js",
+                    "icon": "nodejs.svg"
+                },
+                {
+                    "name": "Express"
+                },
+                {
+                    "name": "jQuery",
+                    "icon": "jquery.png"
+                },
+                {
+                    "name": "Ajax",
+                    "icon": "ajax.png"
+                },
+                {
+                    "name": "JSON",
+                    "icon": "json.png"
+                },
+                {
+                    "name": "REST"
+                }
+            ]
+        },
+        {
+            "title": "Database Technologies",
+            "skills": [
+                {
+                    "name": "MySQL",
+                    "icon": "mysql.svg"
+                },
+                {
+                    "name": "MongoDB",
+                    "icon": "mongodb.svg"
+                }
+            ]
+        },
+        {
+            "title": "Version Control",
+            "skills": [
+                {
+                    "name": "Git bash",
+                    "icon": "gitbash.svg"
+                },
+                {
+                    "name": "Github",
+                    "icon": "github.png"
+                },
+                {
+                    "name": "Gitlab",
+                    "icon": "gitlab.svg"
+                }
+            ]
+        },
+        {
+            "title": "Software Development Methodologies",
+            "skills": [
+                {
+                    "name": "Agile"
+                },
+                {
+                    "name": "SDLC"
+                },
+                {
+                    "name": "TDD"
+                }
+            ]
+        }
+    ],
+    "achievements": [
+        {
+            "title": "AWS Certified Cloud Practitioner",
+            "type": "CERTIFICATE",
+            "issuer": "Amazon AWS"
+        }
+    ]
+}

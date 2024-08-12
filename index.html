@@ -1,140 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="brand-blue">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Abhinav Reddy</title>
+    <title>Sai Abhinav</title>
 
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <script src="https://kit.fontawesome.com/1b00d3bc7a.js" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap CSS link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!-- Bootstrap Icons link -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- Custom CSS file links -->
-    <!-- Fonts -->
-    <link rel="stylesheet" href="./css/font.css">
-    <!-- Background SVG -->
-    <link rel="stylesheet" href="./css/bg.css">
-    <!-- Theme Related CSS -->
-    <link rel="stylesheet" href="./css/theme.css">
-    <!-- Portfolio Specific CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
 </head>
 
-<!-- Scrollspy is used to keep track of the section that is visible in the viewport and highlight the appropriate navigation link -->
+<body data-bs-spy="scroll" data-bs-target="#navbar">
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" class="bg-body-tertiary">
-
-    <!-- Back to Top Button -->
-    <!-- Takes the user to the top of the page -->
-    <button type="button" onclick="toTop()" id="back-to-top"
-        class="btn fs-1 rounded-circle position-fixed bottom-0 end-0 mb-2 me-2 to-top-btn d-flex justify-content-center align-items-center z-3">
-        &#9757;
-    </button>
+    <ul class="social-media-links list-inline m-0">
+        <li class="list-inline-item">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </li>
+        <li class="list-inline-item">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </li>
+        <li class="list-inline-item">
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+        </li>
+    </ul>
 
     <div class="container-fluid p-0">
-        <!-- Header & Navbar -->
-        <header class="sticky-top w-100 z-3">
-            <nav class="navbar navbar-expand-lg px-3 py-1 portfolio-nav">
-                <div class="container p-0">
-                    <a class="navbar-brand fs-6 fw-semibold" href="#home">Sai&nbsp;<span
-                            class="text-brand">Abhinav</span>&nbsp;Reddy</a>
-                    <!-- Hambuger Menu button for mobile screens -->
-                    <button class="ms-auto btn btn-brand navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-                        <i class="bi bi-list"></i>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link py-2" href="#about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link py-2" href="#experience">Experience</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link py-2" href="#projects">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link py-2" href="#skills">Skills</a>
-                            </li>
-                        </ul>
-                        <div class="vertical-divider"></div>
-                        <!-- Theme toggle button -->
-                        <button class="btn theme-toggler">
-                            <!-- Sun icon when in light mode -->
-                            <i class="bi bi-sun-fill light text-warning"></i>
-                            <!-- Moon icon when in dark mode -->
-                            <i class="bi bi-moon-stars-fill dark text-white"></i>
-                        </button>
-                    </div>
-                </div>
-            </nav>
 
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu"
-                aria-labelledby="offcanvasMenuLabel">
-                <div class="offcanvas-header">
-                    <h5 class="navbar-brand offcanvas-title" id="offcanvasMenuLabel">Sai&nbsp;<span
-                            class="text-brand">Abhinav</span>&nbsp;Reddy</h5>
-                    <!-- Theme toggle button -->
-                    <button class="btn ms-auto theme-toggler" data-bs-dismiss="offcanvas">
-                        <!-- Sun icon when in light mode -->
-                        <i class="bi bi-sun-fill light text-warning"></i>
-                        <!-- Moon icon when in dark mode -->
-                        <i class="bi bi-moon-stars-fill dark text-white"></i>
-                    </button>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="list-group list-group-flush text-center fs-4 mt-5">
-                        <li data-href="#about" class="list-group-item list-group-item-action">About</li>
-                        <li data-href="#experience" class="list-group-item list-group-item-action">Experience</li>
-                        <li data-href="#projects" class="list-group-item list-group-item-action">Projects</li>
-                        <li data-href="#skills" class="list-group-item list-group-item-action">Skills</li>
+        <nav class="container fixed-top navbar navbar-expand-lg rounded-bottom">
+            <div class="container">
+                <a class="navbar-brand active text-brand fs-3 merienda fw-bold" aria-current="page" href="#home">SA</a>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutme">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#achievements">Achievements</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </header>
+        </nav>
 
-        <!-- Home / Landing Section -->
-        <section id="home"
-            class="container d-flex flex-column justify-content-center align-items-center mx-auto text-center min-vh-100 position-relative">
-            <!-- <div class="rounded-circle avatar mb-4 ratio ratio-1x1 overflow-hidden">
-                <img src="./images/avatar.jpg" class="img-thumbnail overflow-hidden" alt="Avatar">
-            </div> -->
-            <h3>Hi there &#128075;, my name is</h3>
-            <h1>Sai <span class="text-brand">Abhinav</span> Reddy</h1>
-            <p class="mt-4 col-md-6 col-10">
-                I am a full-stack software engineer with a keen eye for design who is focused on creating appealing
-                user interfaces and engaging digital experiences. I also have a strong desire to learn about and try
-                out new technologies in a challenging environment.
-            </p>
-            <!-- Social media icons -->
-            <div class="d-flex align-items-center justify-content-center mt-8 network-links">
-                <a href="https://www.linkedin.com/in/vasepallisaiabhinav/" target="_blank">
-                    <img src="./images/icons8-linkedin.svg" alt="Linkedin" class="">
-                </a>
-                <a href="https://github.com/saiabhinav" target="_blank">
-                    <img src="./images/icons8-github.svg" alt="github" class="">
-                </a>
-                <a href="mailto:vasepallisaiabhinav@gmail.com">
-                    <img src="./images/icons8-mail.svg" alt="Email" class="">
-                </a>
+        <section id="home" class="container-fluid">
+            <div class="container w-75 mt-5">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div>
+                            <h1 class="raleway fw-bolder fs-1 text-white">
+                                <span class="merienda text-brand">S</span>ai <span
+                                    class="merienda text-brand">A</span>bhinav
+                            </h1>
+                        </div>
+                        <div class="mt-4">
+                            <p>
+                                I am a full-stack software engineer with a keen eye for design who is focused on
+                                creating
+                                appealing user interfaces and engaging digital experiences. I also have a strong desire
+                                to
+                                learn about and try out new technologies in a challenging environment.
+                            </p>
+                        </div>
+                        <div class="mt-5">
+                            <a href="mailto:vasepallisaiabhinav@gmail.com" class="action-link text-white">
+                                Contact me <span><i class="fa-solid fa-chevron-right text-white"
+                                        style="font-size: 0.75rem;"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <div class="profile overflow-hidden">
+                            <img src="./assets/images/avatar.jpg" class="w-full ratio object-fit-contain">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid section-title">
+                    <div class="row gx-5 d-flex justify-content-center align-items-center">
+                        <div class="stat-item d-flex-col align-items-center text-center col mx-2 p-3">
+                            <p class="fs-4 mb-1"><span data-counter="exps">0</span>+ years</p>
+                            <h6>Experience</h6>
+                        </div>
+                        <div class="stat-item d-flex-col align-items-center text-center col mx-2 p-3">
+                            <p class="fs-4 mb-1"><span data-counter="projs">0</span></p>
+                            <h6>Projects</h6>
+                        </div>
+                        <div class="stat-item d-flex-col align-items-center text-center col mx-2 p-3">
+                            <p class="fs-4 mb-1"><span data-counter="achs">0</span></p>
+                            <h6>Achievements</h6>
+                        </div>
+                        <div class="stat-item d-flex-col align-items-center text-center col mx-2 p-3">
+                            <p class="fs-4 mb-1"><span data-counter="skills">0</span></p>
+                            <h6>Skills</h6>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- About Me Section -->
-        <section id="about"
-            class="container d-flex mx-auto flex-column justify-content-center align-items-center my-10">
-            <div class="col-md-8 col-11 g-2 h-100">
-                <h2 class="text-brand w-100">About me</h2>
+        <section id="aboutme" class="container-fluid">
+            <div class="container w-75">
+                <h2 class="text-white merienda section-title">About Me</h2>
                 <div>
-                    <!-- Linked to the CS department information page -->
                     <p class="mt-4">I'm currently persuing
                         master's in Computer Science @
                         George Mason University, Fairfax VA.
@@ -154,754 +135,78 @@
             </div>
         </section>
 
-        <!-- Experiences List Section -->
-        <section id="experience"
-            class="container d-flex mx-auto flex-column justify-content-center align-items-center my-10">
-            <div class="col-md-8 col-11 g-2 h-100">
-                <h2 class="text-brand w-100 mb-4">Where I've worked</h2>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item p-0">
-                        <div class="row justify-content-between p-3 gy-2 fs-7">
-                            <div class="col p-0">
-                                <!-- Role -->
-                                <p class="p-0 mb-1 fs-6">Digital Systems Engineer</p>
-                                <!-- Company / Organisation -->
-                                <p class="p-0 m-0 fw-light">Tata Consultancy Services</p>
+        <section id="experience" class="container-fluid">
+            <div class="container w-75">
+                <h2 class="text-white merienda section-title">Experience</h2>
+                <div class="timeline">
+                    <template id="experience-template">
+                        <div class="t-container">
+                            <div class="title">
+                                <h4 class="role text-brand"></h4>
+                                <h5 class="company"></h5>
+                                <p class="time"></p>
                             </div>
-                            <div class="col-md-auto col-12 p-0 text-start">
-                                <!-- Timeline -->
-                                <p class="p-0 mb-1">Jun 2019 - Jul 2022</p>
-                                <!-- Location -->
-                                <p class="p-0 m-0 fw-light">Hyderabad, India</p>
+                            <div class="content">
+                                <p class="summary"></p>
+                                <ul class="responsibilities"></ul>
+                                <ul class="technologies list-inline"></ul>
                             </div>
                         </div>
-                    </li>
-                    <li class="list-group-item p-0">
-                        <div class="row justify-content-between p-3 gy-2 fs-7">
-                            <div class="col col-md p-0">
-                                <p class="p-0 mb-1 fs-6">Software Developer Intern</p>
-                                <p class="p-0 m-0 fw-light">Tata Consultancy Services</p>
-                            </div>
-                            <div class="col-md-auto col-12 p-0 text-start">
-                                <p class="p-0 mb-1">Jan 2019 - Apr 2019</p>
-                                <p class="p-0 m-0 fw-light">Hyderabad, India</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item p-0">
-                        <div class="row justify-content-between p-3 gy-2 fs-7">
-                            <div class="col p-0">
-                                <p class="p-0 mb-1 fs-6">Web Development Intern</p>
-                                <p class="p-0 m-0 fw-light">Urban Rider</p>
-                            </div>
-                            <div class="col-md-auto col-12 p-0 text-start">
-                                <p class="p-0 mb-1">Apr 2018 - Jun 2018</p>
-                                <p class="p-0 m-0 fw-light">Hyderabad, India (Remote)</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Projects List Sections -->
-        <section id="projects"
-            class="container d-flex mx-auto flex-column justify-content-center align-items-center my-10">
-            <div class="col-md-8 col-11 g-2 h-100">
-                <h2 class="text-brand w-100 mb-4">Projects I've worked on</h2>
-                <!-- Featured / Professional Projects -->
-                <!-- Most recent projects that I have worked on -->
-                <ul class="projects-list p-0">
-                    <li class="p-0 position-relative d-flex flex-column g-6 position-relative place-start project">
-                        <span class="position-absolute number">01</span>
-                        <div class="flex flex-col gy-1 project-title">
-                            <p class="fs-7 text-brand m-0">Professional Project</p>
-                            <p class="fs-5 mb-2">US Retirement Platforms</p>
-                            <div class="fw-light fs-7">
-                                <p class="m-0">Tata Consultancy Services</p>
-                                <p class="m-0">May 2020 - Jun 2022</p>
-                            </div>
-                        </div>
-                        <div class="col-md-10 mt-3 shadow p-3 rounded bg-body project-details">
-                            <p>
-                                The project offers a number of platform applications that help to digitize the
-                                process of creating and migrating various retirement plans.
-                            </p>
-                            <ul class="list-unstyled list-item-arrow ps-3">
-                                <li>
-                                    Developed a module to manage participant beneficiaries and their
-                                    allocations.
-                                </li>
-                                <li>
-                                    Developed a document center module which allows various stakeholders to organize &
-                                    share plan-related documents.
-                                </li>
-                            </ul>
-                            <ul
-                                class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 mt-2 col-12 skills-list px-3 mt-3">
-                                <li>Angular 11</li>
-                                <li>HTML</li>
-                                <li>SCSS</li>
-                                <li>TypeScript</li>
-                                <li>Java</li>
-                                <li>Docker</li>
-                                <li>Magnolia CMS</li>
-                                <li>Chart.js</li>
-                                <li>Fusion Charts</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="p-0 position-relative d-flex flex-column g-6 position-relative mt-5 place-end project">
-                        <span class="position-absolute number">02</span>
-                        <div class="flex flex-col gy-1 project-title">
-                            <p class="fs-7 text-brand m-0">Professional Project</p>
-                            <p class="fs-5 mb-2">Insurance Finance Advisor Portal</p>
-                            <div class="fw-light fs-7">
-                                <p class="m-0">Tata Consultancy Services</p>
-                                <p class="m-0">Jun 2019 - Apr 2020</p>
-                            </div>
-                        </div>
-                        <div class="col-md-10 mt-3 shadow p-3 rounded bg-body project-details">
-                            <p>
-                                The project allows IFAs to manage clients, their policies & projections.
-                            </p>
-                            <ul class="list-unstyled list-item-arrow ps-3">
-                                <li>
-                                    Developed a module that allows advisors to add new clients and create
-                                    policies.
-                                </li>
-                                <li>
-                                    Developed a logging module that tracks different user patterns.
-                                </li>
-                            </ul>
-                            <ul
-                                class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 mt-2 col-12 skills-list px-3 mt-3">
-                                <li>Angular 10</li>
-                                <li>HTML</li>
-                                <li>SCSS</li>
-                                <li>TypeScript</li>
-                                <li>Mongo DB</li>
-                                <li>Java</li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!-- Entire list of projects that I have worked on -->
-            <!-- Displays one row of projects with view more button which can be toggled to display the entire list -->
-            <div class="position-relative col-12 col-md-11 mx-auto">
-                <ul class="mt-4 row row-cols-md-3 row-cols-1 g-3 g-md-3 list-unstyled projects-archive mx-auto p-0">
-                    <li class="col-12 col-md-4 project">
-                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <i class="bi bi-mortarboard fs-3 text-brand"></i>
-                            </div>
-                            <div class="d-flex flex-column justify-content-between h-100">
-                                <h5 class="fw-normal mb-3">Access Mechanism using IPFS</h5>
-                                <div class="d-flex flex-md-row flex-column justify-content-between">
-                                    <p class="fs-7 fw-light">Amrita Vishwa Vidyapeetham</p>
-                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
-                                                class="bi bi-calendar4-range text-brand"></i></span>Jun 2018 - Mar 2019
-                                    </p>
-                                </div>
-                                <p>The project uses a distributed and decentralized network architecture
-                                    called
-                                    InterPlanetary File System and Pretty Good Privacy (PGP) to transfer and secure
-                                    data, addressing a trust issue that arises when transferring data through a service
-                                    that relies on a broker.</p>
-                                <ul
-                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
-                                    <li>JAVA</li>
-                                    <li>Node.js</li>
-                                    <li>Shell Script</li>
-                                    <li>Raspberry Pi</li>
-                                    <li>IPFS</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-12 col-md-4 project d-none d-md-flex">
-                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <i class="bi bi-mortarboard fs-3 text-brand"></i>
-                                <div>
-                                    <a href="https://github.com/SaiAbhinav/Mobi-Spec" class="text-body opacity-100"
-                                        target="_blank">
-                                        <i class="bi bi-github fs-5"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column justify-content-between h-100">
-                                <h5 class="fw-normal mb-3">Mobi-Spec</h5>
-                                <div class="d-flex flex-md-row flex-column justify-content-between">
-                                    <p class="fs-7 fw-light">Amrita Vishwa Vidyapeetham</p>
-                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
-                                                class="bi bi-calendar4-range text-brand"></i></span>Jun 2018 - Oct 2018
-                                    </p>
-                                </div>
-                                <p>The project shows the specifications of various smart phones.</p>
-                                <ul
-                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
-                                    <li>JAVA</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>XSLT</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-12 col-md-4 project d-none d-md-flex">
-                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <i class="bi bi-mortarboard fs-3 text-brand"></i>
-                                <div>
-                                    <a href="https://github.com/SaiAbhinav/Smart-Fan-and-Light"
-                                        class="text-body opacity-100" target="_blank">
-                                        <i class="bi bi-github fs-5"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column justify-content-between h-100">
-                                <h5 class="fw-normal mb-3">Smart Fan & Smart Ligh</h5>
-                                <div class="d-flex flex-md-row flex-column justify-content-between">
-                                    <p class="fs-7 fw-light">Amrita Vishwa Vidyapeetham</p>
-                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
-                                                class="bi bi-calendar4-range text-brand"></i></span>Jun 2018 - Oct 2018
-                                    </p>
-                                </div>
-                                <p>The project allows users to control fans and lights using an Android app and Google
-                                    voice assistant.</p>
-                                <ul
-                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
-                                    <li>JAVA (Android)</li>
-                                    <li>Audrino</li>
-                                    <li>IFTTT</li>
-                                    <li>Adafruit IO (Cloud service)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <ul
-                    class="row row-cols-md-3 row-cols-1 g-3 g-md-3 list-unstyled projects-archive collapse projects-collapsable mx-auto p-0">
-                    <li class="col-12 col-md-4 project d-md-none">
-                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <i class="bi bi-mortarboard fs-3 text-brand"></i>
-                                <div>
-                                    <a href="https://github.com/SaiAbhinav/Mobi-Spec" class="text-body opacity-100"
-                                        target="_blank">
-                                        <i class="bi bi-github fs-5"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column justify-content-between h-100">
-                                <h5 class="fw-normal mb-3">Mobi-Spec</h5>
-                                <div class="d-flex flex-md-row flex-column justify-content-between">
-                                    <p class="fs-7 fw-light">Amrita Vishwa Vidyapeetham</p>
-                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
-                                                class="bi bi-calendar4-range text-brand"></i></span>Jun 2018 - Oct 2018
-                                    </p>
-                                </div>
-                                <p>The project shows the specifications of various smart phones.</p>
-                                <ul
-                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
-                                    <li>JAVA</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>XSLT</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-12 col-md-4 project d-md-none">
-                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <i class="bi bi-mortarboard fs-3 text-brand"></i>
-                                <div>
-                                    <a href="https://github.com/SaiAbhinav/Smart-Fan-and-Light"
-                                        class="text-body opacity-100" target="_blank">
-                                        <i class="bi bi-github fs-5"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column justify-content-between h-100">
-                                <h5 class="fw-normal mb-3">Smart Fan & Smart Ligh</h5>
-                                <div class="d-flex flex-md-row flex-column justify-content-between">
-                                    <p class="fs-7 fw-light">Amrita Vishwa Vidyapeetham</p>
-                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
-                                                class="bi bi-calendar4-range text-brand"></i></span>Jun 2018 - Oct 2018
-                                    </p>
-                                </div>
-                                <p>The project allows users to control fans and lights using an Android app and Google
-                                    voice assistant.</p>
-                                <ul
-                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
-                                    <li>JAVA (Android)</li>
-                                    <li>Audrino</li>
-                                    <li>IFTTT</li>
-                                    <li>Adafruit IO (Cloud service)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-12 col-md-4 project">
-                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <i class="bi bi-mortarboard fs-3 text-brand"></i>
-                                <div>
-                                    <a href="https://github.com/SaiAbhinav/Appetite" class="text-body opacity-100"
-                                        target="_blank">
-                                        <i class="bi bi-github fs-5"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column justify-content-between h-100">
-                                <h5 class="fw-normal mb-3">Restaurant Ordering System</h5>
-                                <div class="d-flex flex-md-row flex-column justify-content-between">
-                                    <p class="fs-7 fw-light">Amrita Vishwa Vidyapeetham</p>
-                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
-                                                class="bi bi-calendar4-range text-brand"></i></span>Jan 2018 - Apr 2018
-                                    </p>
-                                </div>
-                                <p>The website allows customers to select items from a menu of various cuisines and
-                                    make payments. Main focus of this project is to learn and follow the Software
-                                    Development Life Cycle.</p>
-                                <ul
-                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
-                                    <li>PHP</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>MySQL</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-12 col-md-4 project">
-                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <i class="bi bi-mortarboard fs-3 text-brand"></i>
-                                <div>
-                                    <a href="https://github.com/SaiAbhinav/AmbleX-Software-Inc"
-                                        class="text-body opacity-100" target="_blank">
-                                        <i class="bi bi-github fs-5"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column justify-content-between h-100">
-                                <h5 class="fw-normal mb-3">Employee Information System</h5>
-                                <div class="d-flex flex-md-row flex-column justify-content-between">
-                                    <p class="fs-7 fw-light">Amrita Vishwa Vidyapeetham</p>
-                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
-                                                class="bi bi-calendar4-range text-brand"></i></span>Jul 2017 - Nov 2017
-                                    </p>
-                                </div>
-                                <p>The website helps an employer to manage employees, departments, skills & salaries.
-                                    This project's main focus is to understand Database management and Normalization
-                                    concepts.</p>
-                                <ul
-                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
-                                    <li>PHP</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>MySQL</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-12 col-md-4 project">
-                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <i class="bi bi-house fs-3 text-brand"></i>
-                                <div>
-                                    <a href="https://github.com/SaiAbhinav/Expense-Logger" class="text-body opacity-100"
-                                        target="_blank">
-                                        <i class="bi bi-github fs-5"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column justify-content-between h-100">
-                                <h5 class="fw-normal mb-3">Expense Logger</h5>
-                                <div class="d-flex flex-md-row flex-column justify-content-end">
-                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
-                                                class="bi bi-calendar4-range text-brand"></i></span>Jun 2020
-                                    </p>
-                                </div>
-                                <p>A cross platform app to manage expenses.</p>
-                                <ul
-                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
-                                    <li>Flutter</li>
-                                    <li>Dart</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-12 col-md-4 project">
-                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <i class="bi bi-house fs-3 text-brand"></i>
-                                <div>
-                                    <a href="https://github.com/SaiAbhinav/Flutter_Clone_AID"
-                                        class="text-body opacity-100" target="_blank">
-                                        <i class="bi bi-github fs-5"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column justify-content-between h-100">
-                                <h5 class="fw-normal mb-3">Amrita Info Desk Clone</h5>
-                                <div class="d-flex flex-md-row flex-column justify-content-end">
-                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
-                                                class="bi bi-calendar4-range text-brand"></i></span>Jun 2019
-                                    </p>
-                                </div>
-                                <p>Clone of Amrita Info Desk App.</p>
-                                <ul
-                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
-                                    <li>Flutter</li>
-                                    <li>Dart</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-12 col-md-4 project">
-                        <div class="card p-3 rounded border-0 shadow d-flex flex-column w-100 h-100 bg-body">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <i class="bi bi-house fs-3 text-brand"></i>
-                                <div>
-                                    <a href="https://github.com/SaiAbhinav/WhatsApp_Clone-DailyChat"
-                                        class="text-body opacity-100" target="_blank">
-                                        <i class="bi bi-github fs-5"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-column justify-content-between h-100">
-                                <h5 class="fw-normal mb-3">Whats App Clone</h5>
-                                <div class="d-flex flex-md-row flex-column justify-content-end">
-                                    <p class="fs-8 fw-light italic"><span class="me-2"><i
-                                                class="bi bi-calendar4-range text-brand"></i></span>May 2019
-                                    </p>
-                                </div>
-                                <p>Clone of Whats App chatting app.</p>
-                                <ul
-                                    class="d-flex align-items-center text-brand font-monospace flex-wrap fs-7 col-12 skills-list px-3 mt-auto">
-                                    <li>Flutter</li>
-                                    <li>Dart</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <!-- View more / View less toggle button -->
-                <div class="collaspe-btn-container rounded">
-                    <div class="w-100 d-flex justify-content-center align-items-end pb-6">
-                        <button type="button" data-bs-toggle="collapse" data-bs-target=".projects-collapsable"
-                            aria-expanded="false" aria-controls="projects-collapsable" id="toggle-more"
-                            class="btn btn-outline-brand btn-sm mt-4">
-                            <span>View more</span>&nbsp;<i class="bi bi-caret-down"></i>
-                        </button>
-                    </div>
+                    </template>
                 </div>
             </div>
         </section>
 
-        <!-- Skills List Section -->
-        <section id="skills"
-            class="container d-flex mx-auto flex-column justify-content-center align-items-center my-10">
-            <div class="col-md-8 col-11 g-2 h-100">
-                <h2 class="text-brand w-100 mb-4">Skills</h2>
-                <!-- Different Categories of Skills -->
-                <div id="skills-list"></div>
-                <div class="row row-cols-md-4 row-cols-1 g-3">
-                    <div class="col w-100">
-                        <h5 class="my-4">Soft Skills</h5>
-                        <div class="d-flex flex-wrap gap-3 justify-content-start align-items-center">
-                            <div class="skill-text">Communication</div>
-                            <div class="skill-text">Team Work</div>
-                            <div class="skill-text">Problem Solving</div>
-                            <div class="skill-text">Flexibility</div>
+        <section id="projects" class="container-fluid">
+            <div class="container w-75">
+                <h2 class="text-white merienda section-title">Projects</h2>
+                <div class="projects-container">
+                    <template id="project-template">
+                        <div class="row project p-4 mb-4">
+                            <div class="col">
+                                <h5 class="project-title text-brand"></h5>
+                                <p class="project-summary"></p>
+                                <ul class="technologies list-inline m-0"></ul>
+                            </div>
+                            <div class="col">
+                                <div class="w-100 h-100 border-gradient border-gradient-right position-relative"
+                                    style="min-width: 10rem; min-height: 10rem;">
+                                    <div class="project-img-container"></div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </template>
                 </div>
             </div>
         </section>
 
-        <script type="text/javascript">
-            const skills = [
-                {
-                    title: "Programming Languages",
-                    skills: [
-                        {
-                            name: "JavaScript (ES6)",
-                            icon: "./images/skills/javascript.svg"
-                        },
-                        {
-                            name: "TypeScript",
-                            icon: "./images/skills/typescript.svg"
-                        },
-                        {
-                            name: "PHP 7",
-                            icon: "./images/skills/php.svg"
-                        },
-                        {
-                            name: "HTML",
-                            icon: "./images/skills/html5.svg"
-                        },
-                        {
-                            name: "CSS",
-                            icon: "./images/skills/css3.svg"
-                        },
-                        {
-                            name: "Sass",
-                            icon: "./images/skills/sass.svg"
-                        },
-                        {
-                            name: "Java",
-                            icon: "./images/skills/java.svg"
-                        },
-                        {
-                            name: "Python",
-                            icon: "./images/skills/python.svg"
-                        }
-                    ]
-                },
-                {
-                    title: "Front-end Frameworks / Libraries",
-                    skills: [
-                        {
-                            name: "Angular",
-                            icon: "./images/skills/angular.svg"
-                        },
-                        {
-                            name: "Angular Material",
-                            icon: "./images/skills/materialui.svg"
-                        },
-                        {
-                            name: "React",
-                            icon: "./images/skills/react.svg"
-                        },
-                        {
-                            name: "Flutter",
-                            icon: "./images/skills/flutter.svg"
-                        }
-                    ]
-                },
-                {
-                    title: "CSS Frameworks / Libraries",
-                    skills: [
-                        {
-                            name: "Tailwind CSS",
-                            icon: "./images/skills/tailwindcss.svg"
-                        },
-                        {
-                            name: "Bootstrap",
-                            icon: "./images/skills/bootstrap.svg"
-                        }
-                    ]
-                },
-                {
-                    title: "JavaScript Libraries",
-                    skills: [
-                        {
-                            name: "Moment.js",
-                            icon: "./images/skills/momentjs.svg"
-                        },
-                        {
-                            name: "Chart.js",
-                            icon: "./images/skills/chartjs.svg"
-                        },
-                        {
-                            name: "FusionCharts",
-                            icon: "./images/skills/fusioncharts.jpg"
-                        },
-                        {
-                            name: "Quill.js",
-                            text: true
-                        }
-                    ]
-                },
-                {
-                    title: "Back-end Technologies",
-                    skills: [
-                        {
-                            name: "Node.js",
-                            icon: "./images/skills/nodejs.svg"
-                        },
-                        {
-                            name: "Express",
-                            text: true
-                        },
-                        {
-                            name: "jQuery",
-                            icon: "./images/skills/jquery.png"
-                        },
-                        {
-                            name: "Ajax",
-                            text: true
-                        },
-                        {
-                            name: "JSON",
-                            text: true
-                        },
-                        {
-                            name: "REST",
-                            text: true
-                        }
-                    ]
-                },
-                {
-                    title: "Database Technologies",
-                    skills: [
-                        {
-                            name: "MySQL",
-                            icon: "./images/skills/mysql.svg"
-                        },
-                        {
-                            name: "MongoDB",
-                            icon: "./images/skills/mongodb.svg"
-                        }
-                    ]
-                },
-                {
-                    title: "Version Control",
-                    skills: [
-                        {
-                            name: "Git bash",
-                            icon: "./images/skills/gitbash.svg"
-                        },
-                        {
-                            name: "Github",
-                            icon: "./images/skills/github.png"
-                        },
-                        {
-                            name: "Gitlab",
-                            icon: "./images/skills/gitlab.svg"
-                        }
-                    ]
-                },
-                {
-                    title: "Software Development Methodologies",
-                    skills: [
-                        {
-                            name: "Agile",
-                            text: true
-                        },
-                        {
-                            name: "SDLC",
-                            text: true
-                        },
-                        {
-                            name: "TDD",
-                            text: true
-                        }
-                    ]
-                }
-            ];
-
-            const skillsCont = document.getElementById("skills-list");
-
-            skills.forEach(skillset => {
-                const cont = document.createElement('div');
-                cont.classList.add('col');
-
-                const heading = document.createElement('h5');
-                const headingText = document.createTextNode(skillset.title);
-                heading.appendChild(headingText);
-                cont.appendChild(heading);
-
-                const row = document.createElement('div');
-                row.classList.add('row', 'skills-catg');
-
-                skillset.skills.forEach(skill => {
-                    const el = document.createElement('div');
-                    el.classList.add('skill');
-
-                    if (skill.text) {
-                        const text = document.createTextNode(skill.name);
-
-                        el.appendChild(text);
-                    } else {
-                        const img = document.createElement('img');
-                        img.src = skill.icon;
-                        img.alt = skill.name;
-                        el.setAttribute("title", skill.name);
-
-                        el.appendChild(img);
-                    }
-
-                    row.appendChild(el);
-
-                    cont.appendChild(row);
-                });
-
-
-                skillsCont.appendChild(cont);
-            });
-        </script>
-
-        <!-- Footer -->
-        <footer class="container py-4 mb-3 mx-auto row d-flex align-items-center">
-            <div class="col-auto order-md-1 order-2">
-                <p class="mb-1">Designed & Developed by</p>
-                <p class="m-0">Sai Abhinav Reddy 🖖 2023</p>
+        <section id="skills" class="container-fluid">
+            <div class="container w-75">
+                <h2 class="text-white merienda section-title">Skills</h2>
+                <div class="d-flex-col skills-container">
+                    <template id="skills-template">
+                        <div class="d-flex justify-content-between">
+                            <div class="w-100">
+                                <h5 class="skills-section"></h5>
+                            </div>
+                            <ul class="skills-list d-flex"></ul>
+                        </div>
+                    </template>
+                </div>
             </div>
+        </section>
 
-            <!-- Social media links -->
-            <!-- Displays text on screens larger than 768px and display icons on smaller screens -->
-            <ul class="text-brand list-unstyled col d-flex footer-links order-md-2 order-1">
-                <!-- Email -->
-                <li>
-                    <a href="mailto:vasepallisaiabhinav@gmail.com" target="_blank"
-                        class="text-brand text-decoration-none d-none d-md-flex">EMAIL</a>
-                    <a href="mailto:vasepallisaiabhinav@gmail.com" target="_blank" class="d-md-none">
-                        <img src="./images/icons8-mail.svg" alt="Email">
-                    </a>
-                </li>
-                <!-- Twitter -->
-                <li>
-                    <a href="https://www.twitter.com/SaiAbhinav16" target="_blank"
-                        class="text-brand text-decoration-none d-none d-md-flex">TWITTER</a>
-                    <a href="mailto:vasepallisaiabhinav@gmail.com" target="_blank" class="d-md-none">
-                        <img src="./images/icons8-twitter.svg" alt="Twitter">
-                    </a>
-                </li>
-                <!-- Instagram -->
-                <li>
-                    <a href="https://www.instagram.com/sai_abhinav" target="_blank"
-                        class="text-brand text-decoration-none d-none d-md-flex">INSTAGRAM</a>
-                    <a href="mailto:vasepallisaiabhinav@gmail.com" target="_blank" class="d-md-none">
-                        <img src="./images/icons8-instagram.svg" alt="instagram"
-                            style="width: 2rem; position: relative; top: 4px;">
-                    </a>
-                </li>
-                <!-- Github -->
-                <li>
-                    <a href="https://github.com/saiabhinav" target="_blank"
-                        class="text-brand text-decoration-none d-none d-md-flex">GITHUB</a>
-                    <a href="mailto:vasepallisaiabhinav@gmail.com" target="_blank" class="d-md-none">
-                        <img src="./images/icons8-github.svg" alt="github">
-                    </a>
-                </li>
-                <!-- LinkedIn -->
-                <li>
-                    <a href="https://www.linkedin.com/in/vasepallisaiabhinav/" target="_blank"
-                        class="text-brand text-decoration-none d-none d-md-flex">LINKEDIN</a>
-                    <a href="mailto:vasepallisaiabhinav@gmail.com" target="_blank" class="d-md-none">
-                        <img src="./images/icons8-linkedin.svg" alt="linkedin">
-                    </a>
-                </li>
-            </ul>
-        </footer>
+        <section id="achievements" class="container-fluid">
+            <div class="container w-75">
+                <h2 class="text-white merienda section-title">Achievements</h2>
+            </div>
+        </section>
     </div>
 
-    <!-- Custom Scripts -->
-    <script src="./js/scripts.js" defer></script>
-    <!-- Bootstrap javascript link -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
 </body>
 
 </html>

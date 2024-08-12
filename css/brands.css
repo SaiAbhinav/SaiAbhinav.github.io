@@ -1,0 +1,35 @@
+:root {
+    --brand-text: #9c9c9c;
+
+    --brand-bg: #080808;
+
+    --brand-border: #1b1b1b;
+    --brand-border-dark: #484848;
+
+    /* scroll-padding-top: 7rem; */
+}
+
+.brand-red {
+    --brand: #ba1b62;
+    --brand-dark: #8e003f;
+}
+
+.brand-green {
+    --brand: #62ba1b;
+    --brand-dark: #3f8e00;
+}
+
+.brand-blue {
+    --brand: #007a97;
+    --brand-dark: #015e79;
+}
+
+.brand-brown {
+    --brand: #8a5e1b;
+    --brand-dark: #6e4a00;
+}
+
+.brand-orange {
+    --brand: #e88e1b;
+    --brand-dark: #bf5e00;
+}
