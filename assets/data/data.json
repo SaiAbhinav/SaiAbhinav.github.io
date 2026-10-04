@@ -15,7 +15,12 @@
                 "Facilitated group discussions and projects to promote collaborative learning and critical thinking.",
                 "Organized and led review sessions before exams to help students better prepare and clarify doubts."
             ],
-            "technologies": ["Python", "Turtle", "Tkinter", "PyQt"]
+            "technologies": [
+                "Python",
+                "Turtle",
+                "Tkinter",
+                "PyQt"
+            ]
         },
         {
             "role": "Full Stack Developer",
@@ -149,7 +154,11 @@
                 "Integrated a user-friendly interface to visualize performance metrics and bottlenecks.",
                 "Conducted extensive testing and debugging to ensure the extension's reliability and accuracy."
             ],
-            "technologies": ["Python", "Typescript", "Scalene"]
+            "technologies": [
+                "Python",
+                "Typescript",
+                "Scalene"
+            ]
         },
         {
             "title": "Student Feedback Survey System",
@@ -182,7 +191,13 @@
                 "Integrated real-time data synchronization between the web and mobile applications.",
                 "Implemented a rewards calculation algorithm to accurately track and manage passenger miles."
             ],
-            "technologies": ["SQL", "MySQL", "Java", "Java Servlets", "Android"]
+            "technologies": [
+                "SQL",
+                "MySQL",
+                "Java",
+                "Java Servlets",
+                "Android"
+            ]
         },
         {
             "title": "Access Mechanism using IPFS",
@@ -193,7 +208,12 @@
                 "Integrated functionality with the turbo motor using shell scripts for seamless operation.",
                 "Utilized the InterPlanetary File System to securely communicate with the Java application."
             ],
-            "technologies": ["Node.js", "Java", "BashScripting", "RaspberryPi"]
+            "technologies": [
+                "Node.js",
+                "Java",
+                "BashScripting",
+                "RaspberryPi"
+            ]
         },
         {
             "title": "Employee Management System",
@@ -219,7 +239,7 @@
     ],
     "skills": [
         {
-            "title": "Programming Languages",
+            "title": "Languages",
             "skills": [
                 {
                     "name": "JavaScript (ES6)",
@@ -230,9 +250,22 @@
                     "icon": "typescript.svg"
                 },
                 {
+                    "name": "Java",
+                    "icon": "java.svg"
+                },
+                {
+                    "name": "Python",
+                    "icon": "python.svg"
+                },
+                {
                     "name": "PHP 7",
                     "icon": "php.svg"
-                },
+                }
+            ]
+        },
+        {
+            "title": "Markup & Styling",
+            "skills": [
                 {
                     "name": "HTML",
                     "icon": "html5.svg"
@@ -246,17 +279,17 @@
                     "icon": "sass.svg"
                 },
                 {
-                    "name": "Java",
-                    "icon": "java.svg"
+                    "name": "Tailwind CSS",
+                    "icon": "tailwindcss.svg"
                 },
                 {
-                    "name": "Python",
-                    "icon": "python.svg"
+                    "name": "Bootstrap",
+                    "icon": "bootstrap.svg"
                 }
             ]
         },
         {
-            "title": "Front-end Frameworks / Libraries",
+            "title": "Frontend Frameworks",
             "skills": [
                 {
                     "name": "Angular",
@@ -273,29 +306,16 @@
                 {
                     "name": "Flutter",
                     "icon": "flutter.svg"
+                },
+                {
+                    "name": "jQuery",
+                    "icon": "jquery.png"
                 }
             ]
         },
         {
-            "title": "CSS Frameworks / Libraries",
+            "title": "Charts & JS Libraries",
             "skills": [
-                {
-                    "name": "Tailwind CSS",
-                    "icon": "tailwindcss.svg"
-                },
-                {
-                    "name": "Bootstrap",
-                    "icon": "bootstrap.svg"
-                }
-            ]
-        },
-        {
-            "title": "JavaScript Libraries",
-            "skills": [
-                {
-                    "name": "Moment.js",
-                    "icon": "momentjs.svg"
-                },
                 {
                     "name": "Chart.js",
                     "icon": "chartjs.svg"
@@ -305,13 +325,17 @@
                     "icon": "fusioncharts.jpg"
                 },
                 {
+                    "name": "Moment.js",
+                    "icon": "momentjs.svg"
+                },
+                {
                     "name": "Quill.js",
                     "icon": "quilljs.svg"
                 }
             ]
         },
         {
-            "title": "Back-end Technologies",
+            "title": "Backend & APIs",
             "skills": [
                 {
                     "name": "Node.js",
@@ -321,8 +345,7 @@
                     "name": "Express"
                 },
                 {
-                    "name": "jQuery",
-                    "icon": "jquery.png"
+                    "name": "REST"
                 },
                 {
                     "name": "Ajax",
@@ -331,14 +354,11 @@
                 {
                     "name": "JSON",
                     "icon": "json.png"
-                },
-                {
-                    "name": "REST"
                 }
             ]
         },
         {
-            "title": "Database Technologies",
+            "title": "Databases",
             "skills": [
                 {
                     "name": "MySQL",
@@ -368,7 +388,7 @@
             ]
         },
         {
-            "title": "Software Development Methodologies",
+            "title": "Practices",
             "skills": [
                 {
                     "name": "Agile"
